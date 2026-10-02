@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prof. Dr. Mehmet Şahin · Ekonomist</title>
+<meta name="description" content="Prof. Dr. Mehmet Şahin — Çanakkale Onsekiz Mart Üniversitesi. Maliye politikası, bölgesel kalkınma ve kamu ekonomisi üzerine yayınlar, editörlükler ve etkileşimli ders sayfaları. Economist; publications, editorial work and courses.">
+<link rel="canonical" href="https://profmehmetsahin.com/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Prof. Dr. Mehmet Şahin">
+<meta property="og:description" content="Prof. Dr. Mehmet Şahin — Çanakkale Onsekiz Mart Üniversitesi. Maliye politikası, bölgesel kalkınma ve kamu ekonomisi üzerine yayınlar, editörlükler ve etkileşimli ders sayfaları. Economist; publications, editorial work and courses.">
+<meta property="og:url" content="https://profmehmetsahin.com/">
+<meta property="og:image" content="https://profmehmetsahin.com/img/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mehmet Şahin", "honorificPrefix": "Prof. Dr.", "jobTitle": "Professor of Public Finance", "affiliation": {"@type": "CollegeOrUniversity", "name": "Çanakkale Onsekiz Mart Üniversitesi"}, "email": "mailto:mehmetsahin@comu.edu.tr", "image": "https://profmehmetsahin.com/img/mehmet-sahin.webp", "url": "https://profmehmetsahin.com/", "identifier": [{"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-7170-3198"}, {"@type": "PropertyValue", "propertyID": "ResearcherID", "value": "G-4366-2015"}, {"@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "60613922800"}], "sameAs": ["https://orcid.org/0000-0002-7170-3198", "https://www.webofscience.com/wos/author/record/G-4366-2015", "https://www.scopus.com/authid/detail.uri?authorId=60613922800", "https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=5D47948394A62402", "https://holistence.github.io/dersler/"], "knowsAbout": ["Fiscal policy", "Public finance", "Regional development", "Public–private partnerships", "Civil society"]}</script>
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sabit sol kolon (kimlik + menü) + sağda okunur içerik kolonu; mobilde üst blok. Ana sayfada Boğaz akıntısını çağrıştıran hareketli çizgi alanı. */
+:root{
+  --bg:#f4f6f4; --surface:#ffffff; --ink:#14232b; --muted:#5b6b70; --line:#d9e0dd;
+  --strait:#0e4a57; --strait-soft:#e2eeef; --mustard:#b98216; --mustard-soft:#f6ecd6;
+  --flow-a:rgba(14,74,87,.35); --flow-b:rgba(185,130,22,.55);
+  --f-display:"Newsreader","Iowan Old Style",Georgia,serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --side-w:290px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d1619; --surface:#132126; --ink:#e4ecea; --muted:#94a6a8; --line:#24363b;
+  --strait:#7cc3cf; --strait-soft:#173238; --mustard:#e2b04e; --mustard-soft:#2d2614;
+  --flow-a:rgba(124,195,207,.30); --flow-b:rgba(226,176,78,.55); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1619; --surface:#132126; --ink:#e4ecea; --muted:#94a6a8; --line:#24363b;
+  --strait:#7cc3cf; --strait-soft:#173238; --mustard:#e2b04e; --mustard-soft:#2d2614;
+  --flow-a:rgba(124,195,207,.30); --flow-b:rgba(226,176,78,.55); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-body)}
+a{color:var(--strait)}
+:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
+button{font:inherit;color:inherit}
+.shell{display:grid;grid-template-columns:var(--side-w) minmax(0,1fr);min-height:100%}
+/* Side */
+.side{position:sticky;top:env(safe-area-inset-top,0px);height:100vh;padding:36px 26px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:26px;background:var(--surface);overflow-y:auto}
+.mono{font-family:var(--f-mono);font-size:.78rem}
+.who .title{color:var(--mustard);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600}
+.who h1{font-family:var(--f-display);font-weight:500;font-size:1.9rem;line-height:1.1;margin:.25rem 0 .45rem}
+.who p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.45}
+nav.menu{display:flex;flex-direction:column;gap:2px}
+nav.menu a{display:flex;justify-content:space-between;align-items:baseline;padding:8px 12px;border-radius:6px;text-decoration:none;color:var(--ink);font-weight:500}
+nav.menu a span{color:var(--muted);font-family:var(--f-mono);font-size:.74rem}
+nav.menu a:hover{background:var(--strait-soft)}
+nav.menu a[aria-current="page"]{background:var(--strait);color:var(--bg)}
+nav.menu a[aria-current="page"] span{color:inherit;opacity:.75}
+.side .meta{margin-top:auto;display:flex;flex-direction:column;gap:6px;color:var(--muted)}
+.side .meta a{color:var(--muted)}
+/* Main */
+main{padding-block:52px 80px;padding-inline:clamp(16px,5vw,72px);min-width:0}
+.view{max-width:900px}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--mustard);margin:0 0 10px}
+h2{font-family:var(--f-display);font-weight:500;font-size:clamp(1.9rem,3.6vw,2.7rem);line-height:1.12;margin:0 0 18px;text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:500;font-size:1.3rem;margin:0 0 6px;line-height:1.25}
+.lead{font-size:1.12rem;max-width:62ch}
+.muted{color:var(--muted)}
+section+section{margin-top:52px}
+/* Hero */
+.hero{position:relative;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--line);padding:clamp(22px,4vw,44px);display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:32px;align-items:center}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero>*:not(canvas){position:relative}
+.thesis{font-family:var(--f-display);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.08;font-weight:400;margin:0 0 18px;text-wrap:balance}
+.thesis em{color:var(--strait)}
+.rot{display:inline-block;color:var(--mustard);font-style:italic;border-bottom:2px solid var(--mustard);transition:opacity .35s}
+.photo{aspect-ratio:4/5;max-width:100%;border-radius:12px;background:linear-gradient(160deg,var(--strait) 0%,var(--strait-soft) 140%);display:grid;place-items:center;color:var(--bg);font-family:var(--f-display);font-size:3.4rem;position:relative;overflow:hidden;box-shadow:0 18px 40px -20px var(--flow-a)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center bottom;position:absolute;inset:0}
+.photo small{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.06em;opacity:.8}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.84rem;background:var(--bg)}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:20px}
+.stats b{display:block;font-family:var(--f-display);font-size:2.3rem;font-weight:500;font-variant-numeric:tabular-nums;line-height:1}
+.stats span{color:var(--muted);font-size:.84rem}
+.stats .src{grid-column:1/-1;font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+.soon{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.book{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:transform .25s,border-color .25s}
+.book:hover{transform:translateY(-3px);border-color:var(--mustard)}
+.tag{align-self:flex-start;background:var(--mustard-soft);color:var(--mustard);font-family:var(--f-mono);font-size:.68rem;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.08em}
+.book h3{font-size:1.45rem}
+.book p{margin:0;color:var(--muted);font-size:.92rem}
+/* Pubs */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:8px 0 26px}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filters button{font-size:.86rem;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters .n{font-family:var(--f-mono);font-size:.72rem;opacity:.7;margin-left:4px}
+.search{flex:1 1 220px;min-width:0}
+.search input{width:100%;font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.year{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding-block:18px;border-top:1px solid var(--line)}
+.year>.y{font-family:var(--f-display);font-size:1.6rem;color:var(--strait);font-variant-numeric:tabular-nums;line-height:1.2;position:sticky;top:16px;align-self:start}
+.items{display:flex;flex-direction:column;gap:16px;min-width:0}
+.pub{min-width:0}
+.pub .kind{font-family:var(--f-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mustard)}
+.pub .t{font-weight:600;line-height:1.4;margin:2px 0}
+.pub .cite{color:var(--muted);font-size:.9rem}
+.pub .lk{font-family:var(--f-mono);font-size:.76rem;word-break:break-all;margin-left:4px}
+.empty{color:var(--muted);padding:24px 0}
+/* Courses */
+.courses{display:flex;flex-direction:column;gap:14px}
+.course{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.course summary{list-style:none;cursor:pointer;padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:center}
+.course summary::-webkit-details-marker{display:none}
+.course .code{font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
+.course summary h3{margin:0}
+.status{font-family:var(--f-mono);font-size:.7rem;padding:3px 8px;border-radius:4px;white-space:nowrap}
+.status.live{background:var(--strait-soft);color:var(--strait)}
+.status.plan{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.weeks{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;padding:0 20px 20px}
+.wk{border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.86rem;line-height:1.35;text-decoration:none;color:var(--muted);display:flex;flex-direction:column;gap:4px;min-width:0}
+.wk .n{font-family:var(--f-mono);font-size:.7rem}
+a.wk{border-color:var(--strait);background:var(--strait-soft);color:var(--ink)}
+a.wk:hover{background:var(--strait);color:var(--bg)}
+/* Rows */
+.rows{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding-block:14px;border-top:1px solid var(--line)}
+.row .k{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.row p{margin:4px 0 0}
+.contact-list{display:flex;flex-direction:column;gap:12px}
+.copyrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.copyrow code{font-family:var(--f-mono);background:var(--surface);border:1px solid var(--line);padding:6px 10px;border-radius:6px;user-select:all}
+.btn{font-size:.85rem;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:6px;cursor:pointer}
+
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;align-self:flex-start}
+.lang button{border:0;background:transparent;font:inherit;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;padding:5px 12px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--strait);color:var(--bg)}
+.ids{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:6px}
+.ids a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--ink);font-family:var(--f-mono);font-size:.9rem;min-width:0}
+.ids a span{font-family:var(--f-body);font-size:.78rem;color:var(--muted)}
+.ids a:hover{border-color:var(--strait)}
+@media (max-width:900px){
+  .shell{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:22px 16px;gap:16px}
+  .side .meta{display:none}
+  nav.menu{flex-direction:row;flex-wrap:wrap;gap:4px}
+  nav.menu a{padding:6px 10px;font-size:.9rem}
+  nav.menu a span{display:none}
+  main{padding-block:28px 60px}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero .photo{max-width:200px;order:-1}
+  .soon{grid-template-columns:minmax(0,1fr)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .year{grid-template-columns:minmax(0,1fr);gap:6px}
+  .year>.y{position:static}
+  .row{grid-template-columns:minmax(0,1fr);gap:2px}
+}
+@media (prefers-reduced-motion:no-preference){.view{animation:in .4s ease-out}@keyframes in{from{transform:translateY(8px)}to{transform:none}}}
+</style>
+
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="lang" role="group" aria-label="Dil / Language"><button type="button" data-lang="tr" aria-pressed="true">TR</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    <div class="who">
+      <div class="title">Prof. Dr.</div>
+      <h1>Mehmet Şahin</h1>
+      <p data-en="Çanakkale Onsekiz Mart University&lt;br&gt;Fiscal policy · Public finance theory · Fiscal economics">Çanakkale Onsekiz Mart Üniversitesi<br>Maliye politikaları · Maliye kuramı · Mali iktisat</p>
+    </div>
+    <nav class="menu" aria-label="Ana menü">
+      <a href="#home" data-v="home" data-en="Home">Ana Sayfa</a>
+      <a href="#cv" data-v="cv" data-en="CV">Özgeçmiş</a>
+      <a href="#research" data-v="research" data-en="Research">Araştırmalar</a>
+      <a href="#pubs" data-v="pubs"><span data-en="Publications">Yayınlar</span> <span id="nPubs"></span></a>
+      <a href="#editor" data-v="editor"><span data-en="Editorial work">Editörlükler</span> <span id="nEd"></span></a>
+      <a href="#courses" data-v="courses" data-en="Courses">Dersler</a>
+      <a href="#contact" data-v="contact" data-en="Contact">İletişim</a>
+    </nav>
+    <div class="meta mono">
+      <a href="https://orcid.org/0000-0002-7170-3198">ORCID 0000-0002-7170-3198</a>
+      <a href="https://www.webofscience.com/wos/author/record/G-4366-2015">ResearcherID G-4366-2015</a>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=60613922800">Scopus 60613922800</a>
+      <a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;authorId=5D47948394A62402">YÖK Akademik · 49185</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HOME -->
+    <div class="view" id="v-home">
+      <div class="hero">
+        <canvas id="flow" aria-hidden="true"></canvas>
+        <div>
+          <p class="eyebrow" data-en="Economist · Çanakkale">Ekonomist · Çanakkale</p>
+          <p class="thesis" data-en="I measure &lt;em&gt;where&lt;/em&gt; public money goes and how it changes &lt;span class=&quot;rot&quot; id=&quot;rot&quot;&gt;cities&lt;/span&gt;.">Kamu kaynağının <em>nereye</em> gittiğini ve <span class="rot" id="rot">şehirleri</span> nasıl değiştirdiğini ölçüyorum.</p>
+          <p class="lead" data-en="For more than thirty years I have worked on fiscal policy, regional development, civil society and public–private partnerships. This site brings together my publications, editorial work and courses.">Otuz yılı aşkın süredir maliye politikası, bölgesel kalkınma, sivil toplum ve kamu–özel sektör ortaklıkları üzerine çalışıyorum. Bu sayfada yayınlarım, editörlüklerim ve derslerim yer alıyor.</p>
+          <div class="areas" data-en="&lt;span class=&quot;chip&quot;&gt;Fiscal policy&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Regional development&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Public–private partnerships&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Civil society&lt;/span&gt;&lt;span class=&quot;chip&quot;&gt;Panel econometrics&lt;/span&gt;"><span class="chip">Maliye politikası</span><span class="chip">Bölgesel kalkınma</span><span class="chip">Kamu–özel sektör ortaklıkları</span><span class="chip">Sivil toplum</span><span class="chip">Panel ekonometri</span></div>
+        </div>
+        <div class="photo" id="photo"><img alt="Prof. Dr. Mehmet Şahin" src="img/mehmet-sahin.webp" width="480" height="600"></div>
+      </div>
+
+      <section><div class="stats" id="stats"></div></section>
+
+      <section>
+        <p class="eyebrow" data-en="Forthcoming">Yakında</p>
+        <h2 data-en="Books in preparation">Yayına hazırlanan kitaplar</h2>
+        <div class="soon">
+          <article class="book"><span class="tag" data-en="General readers">Genel okur</span><h3>Aşkonomi</h3><p data-en="A semi-academic book, in Turkish, on how economics shows up in everyday life — without tables or charts.">Ekonominin gündelik hayattaki karşılığını tablosuz, grafiksiz anlatan yarı akademik bir kitap.</p></article>
+          <article class="book"><span class="tag" data-en="Data · Policy">Veri · Politika</span><h3>Çanakkale'nin Pusulası</h3><p data-en="Twenty-five years of provincial data on Çanakkale, its problem areas, projections to 2035 and 25 policy packages (in Turkish).">25 yıllık il verisi, sorun alanları, 2035 projeksiyonları ve 25 politika paketi.</p></article>
+          <article class="book"><span class="tag" data-en="Essay">Deneme</span><h3>Şehir Büyürken</h3><p data-en="A literary reading, built on the same data, of what a growing city does to the people who live in it (in Turkish).">Aynı veriden yola çıkıp büyüyen bir kentin insanlara ne yaptığını anlatan edebî bir okuma.</p></article>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow" data-en="Latest publications">Son yayınlar</p>
+        <div class="items" id="latest"></div>
+        <p style="margin-top:18px"><a href="#pubs" data-en="All publications →">Tüm yayınlar →</a></p>
+      </section>
+    </div>
+
+    <!-- CV -->
+    <div class="view" id="v-cv" hidden>
+      <p class="eyebrow" data-en="Curriculum vitae">Özgeçmiş</p>
+      <h2 data-en="Curriculum vitae">Özgeçmiş</h2>
+      <p class="lead" data-en="Born in Gaziantep in 1967, Mehmet Şahin completed his undergraduate, master&#x27;s and doctoral studies at Anadolu University. He began his academic career in 1994 as a research assistant at Dumlupınar University and has been at Çanakkale Onsekiz Mart University since 1998, where he has served as department head, vice dean, institute director and advisor to the rector. In 2016 he founded Rating Academy, now Holistence Academy.">1967'de Gaziantep'te doğdu. Lisans, yüksek lisans ve doktora eğitimini Anadolu Üniversitesi'nde tamamladı. 1994'te Dumlupınar Üniversitesi'nde araştırma görevlisi olarak başladığı akademik kariyerini 1998'den bu yana Çanakkale Onsekiz Mart Üniversitesi'nde sürdürüyor. Bölüm başkanlığı, dekan yardımcılığı, enstitü müdürlüğü ve rektör danışmanlığı görevlerinde bulundu. 2016'da Rating Academy'yi (bugün Holistence Academy) kurdu.</p>
+      <section>
+        <h3 data-en="Education">Eğitim</h3>
+        <div class="rows">
+          <div class="row"><div class="k">1994–1998</div><div data-en="&lt;b&gt;PhD, Economics&lt;/b&gt; — Anadolu University, Graduate School of Social Sciences&lt;p class=&quot;muted&quot;&gt;Dissertation: The role of international economic organizations in the globalization process (the case of Turkey)&lt;/p&gt;"><b>Doktora, İktisat</b> — Anadolu Üniversitesi Sosyal Bilimler Enstitüsü<p class="muted">Tez: Uluslararası ekonomik kuruluşların küreselleşme sürecindeki rolü (Türkiye örneği)</p></div></div>
+          <div class="row"><div class="k">1992–1994</div><div data-en="&lt;b&gt;MA, Public Finance&lt;/b&gt; — Anadolu University, Graduate School of Social Sciences&lt;p class=&quot;muted&quot;&gt;Thesis: Fiscal policies for reducing regional imbalances and their application in Turkey&lt;/p&gt;"><b>Yüksek Lisans, Maliye</b> — Anadolu Üniversitesi Sosyal Bilimler Enstitüsü<p class="muted">Tez: Bölgesel dengesizlikleri giderici maliye politikaları ve Türkiye uygulamaları</p></div></div>
+          <div class="row"><div class="k">1986–1992</div><div data-en="&lt;b&gt;BA, Business Administration&lt;/b&gt; — Anadolu University, Faculty of Economics and Administrative Sciences"><b>Lisans, İşletme</b> — Anadolu Üniversitesi İktisadi ve İdari Bilimler Fakültesi</div></div>
+        </div>
+      </section>
+      <section>
+        <h3 data-en="Academic positions">Akademik görevler</h3>
+        <div class="rows">
+          <div class="row"><div class="k">2019–</div><div data-en="&lt;b&gt;Professor&lt;/b&gt; — Çanakkale Onsekiz Mart University, Lapseki Vocational School, Department of Finance, Banking and Insurance"><b>Profesör</b> — ÇOMÜ Lapseki Meslek Yüksekokulu, Finans-Bankacılık ve Sigortacılık Bölümü</div></div>
+          <div class="row"><div class="k">2009–2019</div><div data-en="&lt;b&gt;Associate Professor&lt;/b&gt; — Çanakkale Onsekiz Mart University, Biga Faculty of Economics and Administrative Sciences, Department of Public Finance"><b>Doçent</b> — ÇOMÜ Biga İktisadi ve İdari Bilimler Fakültesi, Maliye Bölümü</div></div>
+          <div class="row"><div class="k">1998–2009</div><div data-en="&lt;b&gt;Assistant Professor&lt;/b&gt; — Çanakkale Onsekiz Mart University, Biga Faculty of Economics and Administrative Sciences, Departments of Economics and Public Finance"><b>Dr. Öğretim Üyesi</b> — ÇOMÜ Biga İktisadi ve İdari Bilimler Fakültesi, İktisat ve Maliye bölümleri</div></div>
+          <div class="row"><div class="k">1994–1998</div><div data-en="&lt;b&gt;Research Assistant&lt;/b&gt; — Dumlupınar University, Faculty of Economics and Administrative Sciences, Department of Economics"><b>Araştırma Görevlisi</b> — Dumlupınar Üniversitesi İİBF, İktisat Bölümü</div></div>
+        </div>
+      </section>
+      <section>
+        <h3 data-en="Awards">Ödüller</h3>
+        <div class="rows"><div class="row"><div class="k">2021</div><div data-en="&lt;b&gt;Unity Gold Medal&lt;/b&gt; — Kazakhstan"><b>Birlik (Unity) Altın Madalyası</b> — Kazakistan</div></div></div>
+      </section>
+      <section>
+        <h3 data-en="Supervised master&#x27;s theses &lt;span class=&quot;muted&quot; style=&quot;font-size:.85rem&quot;&gt;(titles in Turkish)&lt;/span&gt;">Yönetilen yüksek lisans tezleri</h3>
+        <div class="rows" id="theses"></div>
+      </section>
+    </div>
+
+    <!-- RESEARCH -->
+    <div class="view" id="v-research" hidden>
+      <p class="eyebrow" data-en="Research">Araştırmalar</p>
+      <h2 data-en="Research areas">Araştırma alanları</h2>
+      <div class="rows">
+        <div class="row"><div class="k" data-en="Regional development">Bölgesel kalkınma</div><div data-en="&lt;h3&gt;Regional imbalance and fiscal policy&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Shift-share analysis of investment incentives, regional employment and tourism policy; provincial income divergence, exports and entrepreneurship.&lt;/p&gt;"><h3>Bölgesel dengesizlik ve mali politika</h3><p class="muted">Yatırım teşvikleri, bölgesel istihdam ve turizm politikasının shift-share analizi; il düzeyinde gelir ayrışması, ihracat ve girişimcilik.</p></div></div>
+        <div class="row"><div class="k" data-en="PPPs">KÖO</div><div data-en="&lt;h3&gt;Public–private partnerships&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Fiscal space for infrastructure investment, urban regeneration, water services and partnership models in local services.&lt;/p&gt;"><h3>Kamu–özel sektör ortaklıkları</h3><p class="muted">Altyapı yatırımları için mali alan, kentsel dönüşüm, şebeke suyu ve yerel hizmetlerde ortaklık modelleri.</p></div></div>
+        <div class="row"><div class="k" data-en="Civil society">Sivil toplum</div><div data-en="&lt;h3&gt;Public economics and civil society&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Government funding of civil society organizations, their relationship with neoliberalism and their role in times of crisis.&lt;/p&gt;"><h3>Kamu ekonomisi ve sivil toplum</h3><p class="muted">Sivil toplum kuruluşlarının devlet tarafından finansmanı, neoliberalizmle ilişkisi ve kriz dönemlerindeki rolü.</p></div></div>
+        <div class="row"><div class="k" data-en="Fiscal policy">Maliye politikası</div><div data-en="&lt;h3&gt;Fiscal stability and public expenditure&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Automatic stabilizers, causality between public spending and macroeconomic variables, fiscal democracy and citizen budgets.&lt;/p&gt;"><h3>Mali istikrar ve kamu harcamaları</h3><p class="muted">Otomatik stabilizatörler, kamu harcamaları ile makro değişkenler arasındaki nedensellik, mali demokrasi ve vatandaş bütçesi.</p></div></div>
+        <div class="row"><div class="k" data-en="Demography">Demografi</div><div data-en="&lt;h3&gt;Ageing and growth&lt;/h3&gt;&lt;p class=&quot;muted&quot;&gt;Population ageing, health infrastructure and growth; fertility dynamics in provincial panels.&lt;/p&gt;"><h3>Yaşlanma ve büyüme</h3><p class="muted">Nüfus yaşlanması, sağlık altyapısı ve büyüme ilişkisi; il panelinde doğurganlık dinamikleri.</p></div></div>
+        <div class="row"><div class="k" data-en="Projects">Projeler</div><div id="projects"></div></div>
+      </div>
+    </div>
+
+    <!-- PUBS -->
+    <div class="view" id="v-pubs" hidden>
+      <p class="eyebrow" data-en="Publications">Yayınlar</p>
+      <h2 data-en="Publications">Yayınlar</h2>
+      <div class="toolbar">
+        <div class="filters" id="filters" role="group" aria-label="Yayın türü"></div>
+        <label class="search"><span hidden>Ara</span><input id="q" type="search" placeholder="Başlık, dergi veya yazar ara…" data-en-ph="Search title, journal or author…"></label>
+      </div>
+      <div id="pubList"></div>
+    </div>
+
+    <!-- EDITOR -->
+    <div class="view" id="v-editor" hidden>
+      <p class="eyebrow" data-en="Editorial work">Editörlükler</p>
+      <h2 data-en="Editorial work">Editörlükler</h2>
+      <section>
+        <h3 data-en="Journal editorships">Dergi editörlükleri</h3>
+        <div class="rows">
+          <div class="row"><div class="k" data-en="Editor-in-chief">Baş editör</div><div><b>Journal of Awareness</b><p class="muted">Holistence Publications</p></div></div>
+          <div class="row"><div class="k" data-en="Editor-in-chief">Baş editör</div><div><b>Holistic Economics</b><p class="muted">Holistence Publications</p></div></div>
+        </div>
+      </section>
+      <section>
+        <h3 data-en="Edited books">Editörlüğünü yaptığı kitaplar</h3>
+        <div id="edList"></div>
+      </section>
+    </div>
+
+    <!-- COURSES -->
+    <div class="view" id="v-courses" hidden>
+      <p class="eyebrow" data-en="Courses">Dersler</p>
+      <h2 data-en="Courses">Dersler</h2>
+      <p class="lead" data-en="Each course consists of 14 weekly study pages with explanations, interactive exercises and a self-assessment quiz. The courses are taught in Turkish. &lt;a href=&quot;https://holistence.github.io/dersler/&quot;&gt;All courses →&lt;/a&gt;">Her ders 14 haftalık çalışma sayfasından oluşur: konu anlatımı, etkileşimli öğeler ve öz-değerlendirme testi. <a href="https://holistence.github.io/dersler/">Tüm dersler →</a></p>
+      <div class="courses" id="courseList"></div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="view" id="v-contact" hidden>
+      <p class="eyebrow" data-en="Contact">İletişim</p>
+      <h2 data-en="Contact">İletişim</h2>
+      <div class="contact-list">
+        <div class="copyrow"><code id="mail">mehmetsahin@comu.edu.tr</code><button class="btn" type="button" data-copy="mail" data-en="Copy">Kopyala</button></div>
+        <div class="ids">
+          <a href="https://orcid.org/0000-0002-7170-3198"><span>ORCID</span>0000-0002-7170-3198</a>
+          <a href="https://www.webofscience.com/wos/author/record/G-4366-2015"><span>Web of Science ResearcherID</span>G-4366-2015</a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=60613922800"><span>Scopus Author ID</span>60613922800</a>
+          <a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&amp;authorId=5D47948394A62402"><span>YÖK Akademik</span>49185</a>
+        </div>
+        <p class="muted" data-en="Çanakkale Onsekiz Mart University, Çanakkale, Türkiye">Çanakkale Onsekiz Mart Üniversitesi, Çanakkale</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+/* [yıl, tür, yazarlar, başlık, yayın yeri/künye, doi] — kaynak: YÖK Akademik + Google Scholar (Ekim 2026) */
+const P=[
+// Makaleler
+[2026,"article","Şahin, M., Uysal Şahin, Ö.","Exploratory Evidence on Enterprise Stock and Export Dynamics in Çanakkale: A Fragility-Based Assessment","Studies of Applied Economics, 44(3)"],
+[2026,"article","Şahin, M., Uysal Şahin, Ö.","Does Currency Denomination Reverse the Ageing–Growth Relationship?","Applied Economics Letters"],
+[2026,"article","Şahin, M., Uysal Şahin, Ö., Aliyev, S., Bagirova, I.","Infrastructure, Entrepreneurship, and the Export Paradox: A Panel Data Analysis of Regional Income Divergence in Turkish Economy","Journal of Applied Economic Sciences, 21(3), 1015–1029"],
+[2026,"article","Çetin, Z., Şahin, M., Aslan, M.","R&D, Patents, and Industrial Competitiveness: Time-Varying Evidence from Türkiye (1991–2024)","Social Sciences & Humanities Open"],
+[2018,"article","Şahin, M., Uysal Şahin, Ö.","Türkiye'de Sağlık Turizminin Potansiyeli ve Geleceği: SWOT Analizi","Journal of Awareness, 3(5), 287–300","10.26809/joa.2018548638"],
+[2017,"article","Uysal Şahin, Ö., Şahin, M.","Sürdürülebilir Kalkınma ve Kamu Özel Sektör Ortaklıkları","Journal of Awareness, 2(Özel Sayı 3), 249–274"],
+[2016,"article","Şahin, M., Uysal Şahin, Ö.","The Nature and Future of the Relation Between Neoliberalism and Non-Governmental Organizations","International Journal of Business and Management Invention, 5(11), 104–109"],
+[2016,"article","Uysal Şahin, Ö., Şahin, M.","Public Private Partnerships in Urban Regeneration: The Case of Turkey","The International Journal of Business & Management, 4(12), 237–243"],
+[2015,"article","Şahin, M., Aşan, S.","Küresel Krizin OECD Ülkeleri Bilgi ve İletişim Teknolojileri (BİT) İhracatı Üzerine Etkisi","Journal of Life Economics, 2(1), 27–46"],
+[2014,"article","Şahin, M., Uysal Şahin, Ö.","Arap Baharının Türkiye Ekonomisine Etkileri","Yönetim ve Ekonomi Araştırmaları Dergisi, 23, 171–187"],
+[2013,"article","Şahin, M., Uysal, Ö.","Türkiye'de Bölgesel İstihdamın Shift-Share (Pay Dönüşümü) Analizi","Kamu-İş Dergisi, 13(1), 9–36"],
+[2013,"article","Şahin, M.","Sanata Yönelik Devlet Desteklerinin Ekonomik Rasyonalitesi","Marmara Üniversitesi İİBF Dergisi, 34(1), 253–268"],
+[2012,"article","Şahin, M., Uysal, Ö.","Kamu Maliyesine Etkileri Açısından Kamu Özel Sektör Ortaklıkları Üzerine Bir Değerlendirme","Maliye Dergisi, 162(1), 155–174"],
+[2012,"article","Şahin, M., Uysal, Ö., Kuru, E.","Türkiye Turizm Politikasının Shift-Share Analizi","Marmara Üniversitesi İİBF Dergisi, 32(1), 95–122"],
+[2012,"article","Berksoy, T., Şahin, M., Uysal, Ö.","Kamusal Beyaz Filler ve Kamu Özel Sektör Ortaklıkları","Bankacılar Dergisi, 23(83), 77–97"],
+[2011,"article","Şahin, M., Uysal, Ö.","Bölgesel Kalkınma Çerçevesinde Yatırım Teşviklerinin Shift-Share Analizi","Maliye Dergisi, 160, 111–138"],
+[2011,"article","Şahin, M., Uysal, Ö.","The Sensitivity of the Taxes as Fiscal Stabilizers for Economic Crises in Turkey","Ovidius University Annals, Economic Sciences Series, 11(1), 2247–2252"],
+[2008,"article","Şahin, M., Özenç, Ç.","Varlık Vergisi ve Toplumsal Etkileri","Finans Politik ve Ekonomik Yorumlar Dergisi, 45(516)"],
+[2008,"article","Şahin, M., Özenç, Ç.","Türkiye'de Vergi Kültürünü Etkileyen Faktörler","Yaklaşım Dergisi, 16(182)"],
+[2008,"article","Şahin, M., Özenç, Ç.","Vergi Kültürünün Oluşumunu Etkileyen Faktörler","Yaklaşım Dergisi, 16(181), 216–221"],
+[2007,"article","Şahin, M., Özenç, Ç.","Kamu Harcamaları ile Makro Ekonomik Değişkenler Arasındaki Nedensellik İlişkileri","Yönetim Bilimleri Dergisi, 5(2), 177–200"],
+[2007,"article","Şahin, M., Uysal, Ö.","Sivil Toplum Kuruluşlarının Devlet Tarafından Finansmanı Üzerine Bir Tartışma","Maliye Dergisi, 153(2), 1–13"],
+[2007,"article","Şahin, M., Görkem, H.","Kamusal Hizmet Olarak Cezaevi Hizmetlerinin Özelleştirilmesi ve Türkiye'de Özel Sektör Cezaevlerinin Uygulanabilirliği","Yönetim ve Ekonomi: Celal Bayar Üniversitesi İİBF Dergisi"],
+[2006,"article","Akdemir, A., Şahin, M.","Küresel Kamusal Malların Üretim ve Yönetim Dinamikleri Bağlamında Sınıflandırılması","Maliye Dergisi, 150, 1–24"],
+[2005,"article","Şahin, M.","Küreselleşme Kaynaklı Yoksulluk ve Yolsuzluk","Muhasebe ve Finansman Dergisi (MUFAD), 124–134"],
+[2005,"article","Şahin, M.","Küreselleş(tir)me Projesi Olarak Futbol","İktisat Dergisi, 68–74"],
+[2005,"article","Şahin, M., Sönmezler, G.","The Effects of Adjustment Policies on Labour Markets as Globalization Process","Acta Academica Karviniensia, 1, 204–213"],
+[2004,"article","Şahin, M.","Kamu Borçlanması, Ahlaki Riziko ve Politik Yozlaşma","Vergi Dünyası, 152–161"],
+[2004,"article","Şahin, M.","İnsancıl Yüzlü Uyum ve Sosyal Adalet","Çimento İşveren Dergisi, 19(2), 18–27"],
+[2004,"article","Şahin, M., Dönmez, C. Ö.","Vakıf ve Derneklerin Vergilendirilmesi ve Denetimi","E-Yaklaşım, 1–13"],
+[2004,"article","Gümüş, M., Şahin, M.","Globalization, Culture and Tourism","Journal of Naval Sciences and Engineering, 2(1), 171–182"],
+[2003,"article","Şahin, M.","Challenges and Threats of Globalization for Developing Countries","Journal of Naval Sciences and Engineering, 1(2), 105–113"],
+[2003,"article","Şahin, M., Gümüş, M.","Gelişmekte Olan Ülkeler ve Türkiye Açısından Küreselleşmenin Fırsat ve Tehditleri","Mülkiye Dergisi, 27(240), 117–134"],
+[2002,"article","Şahin, M., Aksu, M.","Sürdürülebilir Kalkınmada Turizmin Yeri ve Türkiye'de Sürdürülebilir Turizm Hareketleri","Standard, 42, 80–86"],
+// Kitaplar
+[2025,"book","Şahin, M.","Ekonomiyi Anlamak: Teorik Temeller ve Pratik Yansımalar","Holistence Publications","10.55094/holistence.49"],
+[2025,"book","Şahin, M.","Medya Ekonomisi: İktisatçı Olmayanlar İçin Bir Rehber","Holistence Publications, 142 s., ISBN 978-625-5626-10-3","10.55094/holistence.52"],
+[2025,"book","Şahin, M.","Enerji Kaynakları, Yatırımı ve Yönetimi: Soru ve Yanıtlarla Uygulamalı Bir Rehber","Holistence Publications, 193 s., ISBN 978-625-5626-11-0","10.55094/holistence.50"],
+[2008,"book","Şahin, M., Uysal, Ö.","Kamu Ekonomisi Perspektifinden Kamu Özel Sektör Ortaklıkları","Ekin Yayınevi, 188 s."],
+[2008,"book","Şahin, M.","Üniversite Öğrencilerinin Sivil Toplum Algılamaları","Ekin Yayınevi, 103 s., ISBN 978-9944-141-49-9"],
+[2008,"book","Şahin, M., Özenç, Ç.","Türkiye'de Mali Stabilizatörlerin Etkinliği","Ekin Yayınevi, 132 s."],
+[2007,"book","Şahin, M.","Kamu Ekonomisi ve Sivil Toplum Kuruluşları","Seçkin Yayıncılık, 171 s., ISBN 978-975-02-0433-3"],
+// Kitap bölümleri
+[2023,"chapter","Uysal Şahin, Ö., Şahin, M.","Türkiye'de Ekonomi Boyutuyla Yaşam Kalitesi","Ö. Uysal Şahin, M. Şahin (Ed.), Farklı Boyutlarıyla Yaşam Kalitesi, Holistence Publications, 223–246"],
+[2022,"chapter","Uysal Şahin, Ö., Şahin, M.","Society 5.0 and Public Service: An Assessment on Turkey","Ö. Uysal Şahin, M. Şahin (Eds.), Economy and State in Transition to Society 5.0, Holistence Publications, 15–48"],
+[2017,"chapter","Şahin, M., Uysal Şahin, Ö.","Küresel Yoksulluğun Ekonomi Politiği","A. Sandıklı, E. İsmayıl (Ed.), Küresel Riskler ve Bölgesel Krizler, Bilgesam, 255–287"],
+[2014,"chapter","Şahin, M.","Altyapı Yatırımları İçin Mali Alan Oluşturmada Kamu Özel Sektör Ortaklıkları","A. Kesik, T. Berksoy, M. Şahin (Ed.), Mali Alan: Teori-Uygulama, Seçkin Yayınevi, 169–186"],
+[2014,"chapter","Berksoy, T., Şahin, M.","Dönüşüm Çağında Kamu Maliyesi","T. Berksoy, M. Şahin (Ed.), Kamu Maliyesinde Güncel Sorunlar, Seçkin Yayınevi, 9–16"],
+[2014,"chapter","Şahin, M., Uysal Şahin, Ö.","Şebeke Suyu Hizmetlerinde Piyasalaş(tır)ma ve Kamu Özel Sektör Ortaklıkları","Prof. Dr. Naci Mutlu'ya Armağan, 361–378"],
+[2013,"chapter","Şahin, M., Uysal, Ö.","Bütçe ve Mali Demokrasi","F. Altuğ, A. Kesik, M. Şeker (Ed.), Kamu Bütçesinde Yeni Yaklaşımlar, Seçkin Yayıncılık, 203–220"],
+[2013,"chapter","Uysal, Ö., Şahin, M.","Vatandaş Odaklı Bütçeleme ve Vatandaş Bütçe","F. Altuğ, A. Kesik, M. Şeker (Ed.), Kamu Bütçesinde Yeni Yaklaşımlar, Seçkin Yayıncılık, 237–254"],
+[2011,"chapter","Şahin, M., Uysal, Ö., Bayraktar, E.","Küresel Kriz Sonrası Kamu Özel Sektör Ortaklıklarının Geleceği","A. Kesik, H. Canpolat (Ed.), Küreselleşme ve Kamu Yönetiminde Dönüşüm, Seçkin Yayıncılık, 319–336"],
+[2010,"chapter","Şahin, M.","Yerel Hizmetlerin Sunumunda Kamu Özel Sektör Ortaklıkları","F. Altuğ, Ö. Çetinkaya, S. İpek (Ed.), Mahalli İdareler Maliyesi Üzerine Yazılar, Ekin Yayınevi, 247–261"],
+[2010,"chapter","Şahin, M., Uysal, Ö.","The Effects of the Global Crisis on Turkish Economy and Existing Fiscal Policies for this Crisis","L. Lacina, P. Rozmahel, A. Rusek (Eds.), Financial Crisis: Institutions and Policies, Martin Stříž Publishing, 218–248"],
+[2009,"chapter","Şahin, M.","Uluslararası Kamu Malı ve Hizmeti Kavramı","A. Herekman (Ed.), Uluslararası Mali İlişkiler, Anadolu Üniversitesi Yayınları"],
+[2006,"chapter","Şahin, M.","Sosyal Devletten Tüccar Devlete: Dünyada ve Türkiye'de Devletin Dönüşümü","N. Falay, M. Şahin, A. Kesik (Ed.), Kamu Maliyesine Yeni Bakış: Teori ve Uygulama, Seçkin Yayıncılık, 41–59"],
+[2006,"chapter","Şahin, M., Görkem, H.","Banka Özelleştirmelerinin İdeolojisi ve Gelişmekte Olan Ülke Uygulamalarından Dersler","N. Falay, M. Şahin, A. Kesik (Ed.), Kamu Maliyesine Yeni Bakış: Teori ve Uygulama, Seçkin Yayıncılık, 181–193"],
+[2006,"chapter","Şahin, M., Şahin, Z.","Bilgi Ekonomisinde Entelektüel Sermayenin Önemi","N. Kargı (Ed.), Bilgi Ekonomisi, Seçkin Yayıncılık, 131–143"],
+[2003,"chapter","Şahin, Z., Şahin, M.","Çevresel Ulusal Muhasebe","Prof. Dr. Yüksel Koç Yalkın'a Armağan, SBF Basın ve Yayın Yüksekokulu Basımevi"],
+// Bildiriler
+[2023,"proc","Şahin, M.","Güzel ve Etkili Konuşmanın Ekonomik Faydaları","VII. International Conference on Language and Awareness"],
+[2019,"proc","Şahin, M., Yaşar, C.","Dijital Çağın Ameleleri ve İnternet Amele Pazarları","Uluslararası Marmara Fen ve Sosyal Bilimler Kongresi, 774–777"],
+[2018,"proc","Şahin, M., Uysal Şahin, Ö.","Yaratıcı Yıkım Olarak Alışveriş Merkezleri","2. Uluslararası Yaratıcı ve İnovatif Yaklaşımlar Konferansı"],
+[2018,"proc","Uysal Şahin, Ö., Şahin, M.","Vatandaş Odaklı Belediyecilik Uygulamaları: Kepez (Çanakkale) Belediyesi Örneği","2. Uluslararası Rating Academy Kongresi: Umut"],
+[2017,"proc","Şahin, M., Yıldırım, B.","Dernek Yöneticilerinin Sivil Toplum Kuruluşu Algısı: Çanakkale İli Örneği","International Rating Academy Congress (özet)"],
+[2017,"proc","Şahin, M.","Çok Boyutlu Mali Farkındalık","International Conference on Awareness (özet)"],
+[2017,"proc","Şahin, M., Uysal Şahin, Ö.","Big Data'nın Ekonomik ve Mali Yönetime Olası Etkileri","Uluslararası Eğitim, Bilim ve Sanatta Yaratıcı ve İnovatif Yaklaşımlar (özet)"],
+[2013,"proc","Akdemir, A., Şahin, M.","Kriz Dönemlerinde Kamu Maliyesini Güçlendirme ve Korumada Yeni Strateji: Kriz Misyonlu Sivil Toplum Kuruluşları","28. Türkiye Maliye Sempozyumu, Antalya"],
+[2010,"proc","Berksoy, T., Şahin, M., Uysal, Ö.","The Changing Role of Universities in Production, Expansion and Finance of the Knowledge as a Global Public Good","Dünya Üniversiteler Kongresi, Çanakkale, 87–97"],
+[2009,"proc","Şahin, M., Varlık, Ü., Uysal, Ö., Ören, B.","The Effects of Knowledge Economy on the Roles of Civil Society Organizations","UniTech International Scientific Conference, Gabrovo"],
+[2007,"proc","Şahin, M., Uysal, Ö.","Toplumların Yumuşak Gücü Olarak Sivil Toplum Kuruluşları","IV. Uluslararası Sivil Toplum Kuruluşları Kongresi, Çanakkale, 967–976"],
+[2006,"proc","Akdemir, A., Şahin, M.","Küresel Kamusal Malların Üretim ve Yönetim Dinamikleri Bağlamında Tasnif Edilmesi","21. Maliye Sempozyumu"],
+[2006,"proc","Şahin, M., Yazgan, G., Karaot, A., Namlı, İ.","Üniversite-Kent Etkileşimi: Çanakkale Kenti ile Çanakkale Onsekiz Mart Üniversitesi İlişkileri Üzerine Bir Araştırma","Uluslararası Çanakkale Kongresi, İstanbul, 175–183"],
+[2006,"proc","Şahin, M.","Performance Measurement in Local Government","4th International Symposium on Business Administration, Karviná"],
+[2005,"proc","Görkem, H., Şahin, M.","Sustainable Development Strategies from the Perspective of Developing Countries in the Globalization Process","International Strategic Management Conference, Çanakkale"],
+[2005,"proc","Şahin, M., Özcüre, G.","Employment Situation in Turkish Banking Sector after the Crisis","Future of Banking after the Year 2000 in the World and in the Czech Republic"],
+[2004,"proc","Uğur, B., Şahin, M.","Yeni Ekonominin Mikro ve Makro Ekonomi Üzerine Etkileri","II. Ulusal Bilgi, Ekonomi ve Yönetim Kongresi"],
+[2002,"proc","Şahin, M., Hamarat, B.","G10, Avrupa Birliği ve OECD Ülkelerinin Sosyo-Ekonomik Benzerliklerinin Fuzzy Kümeleme Analizi ile Test Edilmesi","ERC/METU VI. International Conference in Economics, Ankara"],
+[2002,"proc","Şahin, M.","Washington Konsensüsü'nden Yeni Washington Konsensüsü'ne: IMF ve Dünya Bankası Değişiyor mu?","Uluslararası ODTÜ Uluslararası İlişkiler Konferansı, Ankara, 205–230"],
+[2001,"proc","Şahin, M., Şahin, Z.","Çevresel Muhasebe Türkiye İçin Uygulanabilir mi?","Ulusal Sanayi-Çevre Sempozyumu ve Sergisi"],
+// Raporlar
+[2022,"report","Uysal Şahin, Ö., Şahin, M., Yaşar, C., Hamarat, B.","Holistence Academy Üniversite İzleme ve Değerlendirme Sıralaması – 2019","Holistence Publications, 78 s., ISBN 978-625-6942-01-1","10.55094/holistence.284"],
+// Projeler
+[2020,"project","Şahin, M., Uysal Şahin, Ö., Yaşar, C.","Video Konferans Destekli Dijital Öğrenme Materyali ve Öğrenme Yönetim Sistemi Geliştirilmesi","Kamu kurumu destekli, 2020–2023, tamamlandı"],
+[2020,"project","Uysal Şahin, Ö., Şahin, M., Hamarat, B., Yaşar, C.","Belediye, Sivil Toplum Kuruluşları ve Özel İşletmelerin Derecelendirilmesi","Kamu kurumu destekli, 2020–2021, tamamlandı"],
+[2010,"project","Şahin, M., Bayraktar, E., Uysal Şahin, Ö.","Kamusal Mal Olarak Şebeke Suyunun Sunumu, Finansmanı ve Fiyatlandırılmasında Alternatif Modeller","ÇOMÜ BAP, 2010–2012, tamamlandı"],
+[2006,"project","Şahin, M.","Üniversite Öğrencilerinin Sivil Toplum Algılamalarındaki Farklılıklar: Çanakkale Onsekiz Mart Üniversitesi'nde Bir Araştırma","ÇOMÜ BAP, 2006–2008, tamamlandı"],
+[2005,"project","Şahin, M., Esen, E.","Yapısal Uyum Sürecinde Türkiye'de Kamu Gelir-Gider Kompozisyonundaki Değişiklikler","ÇOMÜ BAP, 2005–2007, tamamlandı"],
+[2005,"project","Görkem, H., Şahin, M.","Kamu Hizmetlerinin Özelleştirilmesi Kapsamında Cezaevi Hizmetlerinin Özelleştirilmesi ve Türkiye'de Uygulanabilirliği","ÇOMÜ BAP, 2005–2007, tamamlandı"]
+].map(([y,k,a,t,v,d])=>({y,k,a,t,v,d}));
+
+/* Editörlüğünü yaptığı kitaplar */
+const ED=[
+[2023,"Farklı Boyutlarıyla Yaşam Kalitesi","Ö. Uysal Şahin, M. Şahin (Ed.)","Holistence Publications, 246 s., ISBN 978-625-6942-97-4","10.55094/holistence.164"],
+[2022,"Economy and State in Transition to Society 5.0","Ö. Uysal Şahin, M. Şahin (Eds.)","Holistence Publications, 128 s., ISBN 978-625-70479-8-2","10.55094/holistence.166"],
+[2014,"Mali Alan: Teori-Uygulama","A. Kesik, T. Berksoy, M. Şahin (Ed.)","Seçkin Yayınevi, 360 s., ISBN 978-975-02-2764-6"],
+[2014,"Kamu Maliyesinde Güncel Sorunlar","T. Berksoy, M. Şahin (Ed.)","Seçkin Yayınevi, 290 s., ISBN 978-975-02-3046-2"],
+[2006,"Kamu Maliyesine Yeni Bakış: Teori ve Uygulama","N. Falay, M. Şahin, A. Kesik (Ed.)","Seçkin Yayıncılık, 260 s., ISBN 978-975-02-0183-7"]
+].map(([y,t,a,v,d])=>({y,t,a,v,d}));
+
+const THESES=[[2015,"Sibel Aşan","Özelleştirme mali alan ilişkisi"],[2012,"Elçin Bayraktar","Türkiye'de dışa açıklık ile kamu gelir ve harcamaları arasındaki ilişki"],[2011,"Gamze Aydın","Yerel kamu hizmetlerinde kamu özel sektör ortaklıkları: Çanakkale Belediyesi örneği"],[2010,"Levent Gürses","Kamusal mal olarak içme suyu tedarikinde alternatif yöntemler"],[2009,"Özge Uysal","Türkiye'de mali disiplinin uzun dönem makroekonomik etkileri"],[2007,"Hilal Görkem","Kamu hizmetlerinin özelleştirilmesi kapsamında cezaevi hizmetlerinin özelleştirilmesi ve Türkiye'de uygulanabilirliği"],[2006,"İdil Elver","Türkiye-Uluslararası Para Fonu ilişkileri bağlamında mali egemenlik"],[2006,"Emine Esen Akarsu","Yapısal uyum sürecinde Türkiye'de kamu gelir-gider kompozisyonundaki değişiklikler"],[2005,"Mazlum Muammer Şentürk","Türkiye'de kamu harcamaları ve iç borç ilişkisi: 1980-2003"],[2005,"Çiğdem Özenç","Kamu harcamalarının makro ekonomik performans üzerine etkileri"],[2004,"Özgür Manap","Küreselleşme sürecinin para ve maliye politikalarına etkileri ve Türkiye"]];
+
+/* Dil */
+const I={
+ tr:{kinds:{all:"Tümü",article:"Makaleler",book:"Kitaplar",chapter:"Kitap bölümleri",proc:"Bildiriler",report:"Raporlar",project:"Projeler"},
+     ks:{article:"Makale",book:"Kitap",chapter:"Kitap bölümü",proc:"Bildiri",report:"Rapor",project:"Proje"},
+     ed:"Editörlü kitap",link:"Bağlantı",none:"Aramanızla eşleşen kayıt yok.",proj:"Tamamlanan projeler",
+     stats:["Makale","Kitap","Kitap bölümü","Atıf","h-indeksi"],src:"Atıf ve h-indeksi: Google Scholar, Ekim 2026",
+     words:["şehirleri","bölgeleri","toplumu","refahı","Çanakkale'yi"],week:"Hafta",ready:"hazır",weeks:"14 hafta",copied:"Kopyalandı",
+     title:"Prof. Dr. Mehmet Şahin · Ekonomist"},
+ en:{kinds:{all:"All",article:"Articles",book:"Books",chapter:"Book chapters",proc:"Proceedings",report:"Reports",project:"Projects"},
+     ks:{article:"Article",book:"Book",chapter:"Book chapter",proc:"Conference paper",report:"Report",project:"Project"},
+     ed:"Edited book",link:"Link",none:"No records match your search.",proj:"Completed projects",
+     stats:["Articles","Books","Book chapters","Citations","h-index"],src:"Citations and h-index: Google Scholar, October 2026",
+     words:["cities","regions","society","welfare","Çanakkale"],week:"Week",ready:"ready",weeks:"14 weeks",copied:"Copied",
+     title:"Prof. Dr. Mehmet Şahin · Economist"}
+};
+let L="tr";
+const T=()=>I[L];
+const projEN=v=>L==="tr"?v:v.replace("Kamu kurumu destekli","Public agency funded").replace("ÇOMÜ BAP","ÇOMÜ Scientific Research Projects Unit (BAP)").replace("tamamlandı","completed");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const link=x=>x.d?`<a class="lk" href="https://doi.org/${x.d}">doi.org/${x.d}</a>`:`<a class="lk" href="https://scholar.google.com/scholar?q=${encodeURIComponent('"'+x.t+'"')}">${T().link}</a>`;
+const pubHTML=p=>`<div class="pub"><div class="kind">${T().ks[p.k]}</div><div class="t">${esc(p.t)}</div><div class="cite">${esc(p.a)} (${p.y}). ${esc(p.k==="project"?projEN(p.v):p.v)}. ${p.k==="project"?"":link(p)}</div></div>`;
+const byYear=(a,b)=>b.y-a.y||a.t.localeCompare(b.t,"tr");
+const pubsOnly=P.filter(p=>p.k!=="project");
+
+let kind="all",q="";
+function renderFilters(){
+  document.getElementById("filters").innerHTML=Object.entries(T().kinds).map(([k,l])=>{
+    const n=k==="all"?P.length:P.filter(p=>p.k===k).length;
+    return `<button type="button" data-k="${k}" aria-pressed="${k===kind}">${l}<span class="n">${n}</span></button>`}).join("");
+}
+function renderPubs(){
+  const list=P.filter(p=>(kind==="all"||p.k===kind)&&(p.t+" "+p.v+" "+p.a).toLocaleLowerCase("tr").includes(q)).sort(byYear);
+  const el=document.getElementById("pubList");
+  if(!list.length){el.innerHTML=`<p class="empty">${T().none}</p>`;return;}
+  const ys=[...new Set(list.map(p=>p.y))];
+  el.innerHTML=ys.map(y=>`<div class="year"><div class="y">${y}</div><div class="items">${list.filter(p=>p.y===y).map(pubHTML).join("")}</div></div>`).join("");
+}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button");if(b){kind=b.dataset.k;renderFilters();renderPubs();}});
+document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLocaleLowerCase("tr");renderPubs();});
+
+function renderStatic(){
+document.getElementById("edList").innerHTML=ED.sort((a,b)=>b.y-a.y).map(e=>`<div class="year"><div class="y">${e.y}</div><div class="items"><div class="pub"><div class="kind">${T().ed}</div><div class="t">${esc(e.t)}</div><div class="cite">${esc(e.a)}. ${esc(e.v)}. ${link(e)}</div></div></div></div>`).join("");
+document.getElementById("theses").innerHTML=THESES.map(([y,n,t])=>`<div class="row"><div class="k">${y}</div><div><b>${n}</b><p class="muted">${t}</p></div></div>`).join("");
+document.getElementById("projects").innerHTML=`<h3>${T().proj}</h3>`+P.filter(p=>p.k==="project").sort(byYear).map(p=>`<p><b>${esc(p.t)}</b><br><span class="muted">${esc(projEN(p.v))}</span></p>`).join("");
+document.getElementById("latest").innerHTML=pubsOnly.filter(p=>p.k==="article"||p.k==="book").sort(byYear).slice(0,4).map(pubHTML).join("");
+document.getElementById("nPubs").textContent=P.length;
+document.getElementById("nEd").textContent=ED.length+2;
+
+/* Sayaçlar */
+const S=[P.filter(p=>p.k==="article").length,P.filter(p=>p.k==="book").length,P.filter(p=>p.k==="chapter").length,610,12];
+document.getElementById("stats").innerHTML=S.map((n,i)=>`<div><b data-n="${n}">${n}</b><span>${T().stats[i]}</span></div>`).join("")+`<div class="src">${T().src}</div>`;
+renderCourses();
+}
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function countUp(){
+  if(reduce)return;
+  document.querySelectorAll("#stats b[data-n]").forEach(b=>{
+    const n=+b.dataset.n,t0=performance.now(),d=1400;
+    (function f(t){const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);b.textContent=Math.round(n*e);if(k<1)requestAnimationFrame(f);else b.textContent=n;})(t0);
+  });
+}
+
+/* Dönen kelime */
+let wi=0;
+if(!reduce)setInterval(()=>{const r=document.getElementById("rot");r.style.opacity=0;setTimeout(()=>{const W=T().words;wi=(wi+1)%W.length;r.textContent=W[wi];r.style.opacity=1;},350);},2600);
+
+/* Akıntı çizgileri */
+(function(){
+  const c=document.getElementById("flow"),x=c.getContext("2d");let w,h,dpr,t=0,raf;
+  const lines=Array.from({length:14},(_,i)=>({o:i/14,amp:8+Math.random()*18,sp:.3+Math.random()*.5,ph:Math.random()*6.28}));
+  function size(){dpr=Math.min(2,devicePixelRatio||1);w=c.clientWidth;h=c.clientHeight;c.width=w*dpr;c.height=h*dpr;x.setTransform(dpr,0,0,dpr,0,0);}
+  function col(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+  function draw(){
+    x.clearRect(0,0,w,h);const a=col("--flow-a"),b=col("--flow-b");
+    lines.forEach((L,i)=>{
+      x.beginPath();const y0=h*(.15+L.o*.85);
+      for(let px=0;px<=w;px+=8){const y=y0+Math.sin(px*.006+t*L.sp+L.ph)*L.amp+Math.sin(px*.017-t*.4)*4;px?x.lineTo(px,y):x.moveTo(px,y);}
+      x.strokeStyle=i%5===2?b:a;x.lineWidth=i%5===2?1.4:.8;x.stroke();
+    });
+  }
+  function loop(){t+=.012;draw();raf=requestAnimationFrame(loop);}
+  size();draw();addEventListener("resize",()=>{size();draw();});
+  if(!reduce)loop();
+  window.__flow={stop(){cancelAnimationFrame(raf)},start(){if(!reduce){cancelAnimationFrame(raf);loop();}},size(){size();draw();}};
+})();
+
+/* Dersler */
+/* Dersler — bağlantılar holistence.github.io/dersler/<ders>/hafta-XX/ */
+const COURSES=[{"code": "GE", "name": "Genel Ekonomi", "src": "Ders kitabı: Ekonomiyi Anlamak: Teorik Temeller ve Pratik Yansımalar (Holistence, 2025)", "weeks": [["İktisat neden öğrenilir? Düşünme tarzı ve tuzakları", "Bölüm 1"], ["Kıtlık, fırsat maliyeti; pozitif–normatif; mikro–makro", "Bölüm 2–4"], ["İktisadi sistemler, düşünce okulları, ekonominin döngüsü", "Bölüm 5–7"], ["Piyasayı anlamak ve tüketici dengesi", "Bölüm 8–9"], ["Talep ve talep esnekliği", "Bölüm 12"], ["Arz, piyasa dengesi, üretici ve tüketici rantı", "Bölüm 13–15"], ["Üretim ve maliyetler", "Bölüm 10–11"], ["Devlet müdahaleleri ve piyasa başarısızlıkları", "Bölüm 16"], ["Piyasa yapıları: tam rekabetten oligopole", "Bölüm 17"], ["Makroekonomiye giriş ve milli gelir", "Bölüm 18–20"], ["Büyüme, kalkınma, istihdam ve işsizlik", "Bölüm 21–22"], ["Enflasyon ve para", "Bölüm 23–24"], ["Toplam talep–toplam arz ve makro politikalar", "Bölüm 25–27"], ["Bütçe açıkları, kamu borcu ve dış ticaret", "Bölüm 28–29"]], "slug": "genel-ekonomi", "live": {"1": "https://holistence.github.io/dersler/genel-ekonomi/hafta-01/", "2": "https://holistence.github.io/dersler/genel-ekonomi/hafta-02/", "3": "https://holistence.github.io/dersler/genel-ekonomi/hafta-03/", "4": "https://holistence.github.io/dersler/genel-ekonomi/hafta-04/", "5": "https://holistence.github.io/dersler/genel-ekonomi/hafta-05/", "6": "https://holistence.github.io/dersler/genel-ekonomi/hafta-06/", "7": "https://holistence.github.io/dersler/genel-ekonomi/hafta-07/", "8": "https://holistence.github.io/dersler/genel-ekonomi/hafta-08/", "9": "https://holistence.github.io/dersler/genel-ekonomi/hafta-09/", "10": "https://holistence.github.io/dersler/genel-ekonomi/hafta-10/", "11": "https://holistence.github.io/dersler/genel-ekonomi/hafta-11/", "12": "https://holistence.github.io/dersler/genel-ekonomi/hafta-12/", "13": "https://holistence.github.io/dersler/genel-ekonomi/hafta-13/", "14": "https://holistence.github.io/dersler/genel-ekonomi/hafta-14/"}}, {"code": "ME", "name": "Medya Ekonomisi", "src": "Ders kitabı: Medya Ekonomisi: İktisatçı Olmayanlar İçin Bir Rehber (Holistence, 2025)", "weeks": [["Medya ekonomisi nedir? Tarihsel dönüm noktaları ve iki yönlü piyasa", "s. 3–8"], ["Medya ürününün iktisadı: ilk kopya maliyeti, rakipsizlik, korsan", "s. 9–14"], ["Reyting, reklam ve \"ürün sizsiniz\"", "s. 15–18"], ["Abonelik modelleri ve platform kapitalizmi", "s. 19–23"], ["Yaratıcı ekonomisi: YouTuber, influencer ve bedava oyunlar", "s. 24–28"], ["Stratejiler: birleşmeler, gişe filmi mantığı, ağ etkileri", "s. 29–36"], ["Dikkat, algı ve enformasyon ekonomisi", "s. 37–50"], ["Dijitalleşme: bilişsel artık, filtre balonu, dördüncü kuvvet", "s. 51–57"], ["Küresel içerik, lisans, gazetecilik ve medya emeği", "s. 58–68"], ["Yatırım ve reklam: beğeninin değeri, yeni kapı bekçileri", "s. 69–83"], ["Müzik akışı, medya sahipliği ve reklamın satışa etkisi", "s. 84–90"], ["Tarihsel evrim: kuruşluk gazeteden kablolu TV'ye", "s. 91–97"], ["Ekonomik döngüler, sistemler ve popüler kültür", "s. 98–118"], ["Geleceğin medyası: yaratıcı yıkım ve yapay zekâ", "s. 119–128"]], "slug": "medya-ekonomisi", "live": {"1": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-01/", "2": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-02/", "3": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-03/", "4": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-04/", "5": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-05/", "6": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-06/", "7": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-07/", "8": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-08/", "9": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-09/", "10": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-10/", "11": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-11/", "12": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-12/", "13": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-13/", "14": "https://holistence.github.io/dersler/medya-ekonomisi/hafta-14/"}}, {"code": "EN", "name": "Enerji Kaynakları, Yatırımı ve Yönetimi", "src": "Ders kitabı: Enerji Kaynakları, Yatırımı ve Yönetimi: Soru ve Yanıtlarla Uygulamalı Bir Rehber (Holistence, 2025)", "weeks": [["Enerjiye genel bakış: kaynaklar, dönüşüm verimliliği, kapasite ve yük faktörü", "s. 3–13"], ["Enerji güvenliği (4A), değer zinciri, talep esnekliği, piyasa modelleri", "s. 14–20"], ["Petrol: kalite, OPEC ve fiyatın belirlenmesi", "s. 21–24"], ["Doğal gaz, LNG, kömür ve fosil şirketlerinin geçişi", "s. 25–39"], ["Yenilenebilir I: güneş, rüzgâr, hidroelektrik", "s. 40–45"], ["Yenilenebilir II: biyokütle, jeotermal, LCOE, depolama, hidrojen", "s. 46–57"], ["Elektrik piyasaları: GÖP, GİP, marjinal fiyatlama, fiyat riski", "s. 58–64"], ["Gaz fiyatlaması, yan hizmetler, likidite, sınır ötesi ticaret", "s. 65–78"], ["Yatırım değerlendirme: proje finansmanı, NBD, İVO, PPA", "s. 79–86"], ["Risk ve finansman: inşaat ve siyasi risk, hedging, devlet destekleri", "s. 87–100"], ["Enerji verimliliği ve talep tarafı yönetimi", "s. 101–116"], ["Geleceğin enerji sistemleri: akıllı şebeke, hidrojen, net sıfır", "s. 117–144"], ["Karbon piyasaları ve karbon fiyatlaması", "s. 145–167"], ["Sürdürülebilir kalkınma, yeşil ve mavi ekonomi, vaka çalışması", "s. 168–179"]], "slug": "enerji-yonetimi", "live": {"1": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-01/", "2": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-02/", "3": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-03/", "4": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-04/", "5": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-05/", "6": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-06/", "7": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-07/", "8": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-08/", "9": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-09/", "10": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-10/", "11": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-11/", "12": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-12/", "13": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-13/", "14": "https://holistence.github.io/dersler/enerji-yonetimi/hafta-14/"}}, {"code": "SK", "name": "Sürdürülebilir Kalkınma", "src": "Temel kaynak: J. D. Sachs, Sürdürülebilir Kalkınma Çağı", "weeks": [["Sürdürülebilir kalkınmaya giriş", "Bölüm 1"], ["Ekonomik büyümenin kısa tarihi", ""], ["Küresel eşitsizlik", ""], ["Aşırı yoksulluk", ""], ["Kalkınmanın coğrafyası", ""], ["Gezegen sınırları", ""], ["Sosyal kapsayıcılık", ""], ["Sağlık", ""], ["Eğitim", ""], ["Gıda güvenliği", ""], ["Sürdürülebilir şehirler", ""], ["İklim değişikliği", ""], ["Biyoçeşitlilik ve ekosistemler", ""], ["SKA'ların finansmanı ve yönetişimi", ""]], "slug": "surdurulebilir-kalkinma", "live": {"1": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-01/", "2": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-02/", "3": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-03/", "4": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-04/", "5": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-05/", "6": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-06/", "7": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-07/", "8": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-08/", "9": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-09/", "10": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-10/", "11": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-11/", "12": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-12/", "13": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-13/", "14": "https://holistence.github.io/dersler/surdurulebilir-kalkinma/hafta-14/"}}];
+function renderCourses(){
+document.getElementById("courseList").innerHTML=COURSES.map((c,i)=>{
+  const n=Object.keys(c.live).length;
+  const ws=c.weeks.map(([w,ref],j)=>{const u=c.live[j+1],h=`${T().week} ${String(j+1).padStart(2,"0")}`;
+    return u?`<a class="wk" href="${u}"><span class="n">${h} · ${T().ready}</span>${w}</a>`:`<div class="wk"><span class="n">${h}${ref?" · "+ref:""}</span>${w}</div>`}).join("");
+  return `<details class="course" ${i===0?"open":""}><summary><div><div class="code">${c.code} · ${T().weeks}</div><h3>${c.name}</h3><div class="muted" style="font-size:.88rem">${c.src}</div></div><span class="status ${n?"live":"plan"}">${n}/14 ${T().ready}</span></summary><div class="weeks">${ws}</div></details>`;
+}).join("");
+}
+
+/* Kopyala */
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-copy]");if(!b)return;const el=document.getElementById(b.dataset.copy);
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);};
+  try{navigator.clipboard.writeText(el.textContent).then(()=>{b.textContent=T().copied},sel)}catch(_){sel()}
+});
+
+/* Yönlendirme */
+const VIEWS=["home","cv","research","pubs","editor","courses","contact"];
+function route(){
+  const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):"home";
+  VIEWS.forEach(n=>document.getElementById("v-"+n).hidden=n!==v);
+  document.querySelectorAll("nav.menu a").forEach(a=>a.dataset.v===v?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+  if(v==="home"){window.__flow.size();window.__flow.start();countUp();}else window.__flow.stop();
+  scrollTo(0,0);
+}
+addEventListener("hashchange",route);
+function setLang(l){
+  L=l==="en"?"en":"tr";
+  document.documentElement.lang=L;document.title=T().title;
+  document.querySelectorAll("[data-en]").forEach(el=>{if(el.dataset.tr===undefined)el.dataset.tr=el.innerHTML;el.innerHTML=L==="en"?el.dataset.en:el.dataset.tr;});
+  document.querySelectorAll("[data-en-ph]").forEach(el=>{if(el.dataset.trPh===undefined)el.dataset.trPh=el.placeholder;el.placeholder=L==="en"?el.dataset.enPh:el.dataset.trPh;});
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===L));
+  wi=0;renderFilters();renderPubs();renderStatic();
+  if(!document.getElementById("v-home").hidden)countUp();
+  try{localStorage.setItem("lang",L)}catch(e){}
+}
+document.querySelector(".lang").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setLang(b.dataset.lang);});
+let start="tr";
+try{const u=new URLSearchParams(location.search).get("lang");const st=localStorage.getItem("lang");
+  start=u||st||((navigator.language||"tr").toLowerCase().startsWith("tr")?"tr":"en");}catch(e){}
+setLang(start);route();
+</script>
+
+</body>
+</html>
