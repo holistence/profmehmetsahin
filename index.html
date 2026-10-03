@@ -14,7 +14,7 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:locale:alternate" content="en_US">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mehmet Şahin", "honorificPrefix": "Prof. Dr.", "jobTitle": "Professor of Public Finance", "affiliation": {"@type": "CollegeOrUniversity", "name": "Çanakkale Onsekiz Mart Üniversitesi"}, "email": "mailto:mehmetsahin@comu.edu.tr", "image": "https://profmehmetsahin.com/img/mehmet-sahin.webp", "url": "https://profmehmetsahin.com/", "identifier": [{"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-7170-3198"}, {"@type": "PropertyValue", "propertyID": "ResearcherID", "value": "G-4366-2015"}, {"@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "60613922800"}], "sameAs": ["https://orcid.org/0000-0002-7170-3198", "https://www.webofscience.com/wos/author/record/G-4366-2015", "https://www.scopus.com/authid/detail.uri?authorId=60613922800", "https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=5D47948394A62402", "https://holistence.github.io/dersler/"], "knowsAbout": ["Fiscal policy", "Public finance", "Regional development", "Public–private partnerships", "Civil society"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mehmet Şahin", "honorificPrefix": "Prof. Dr.", "jobTitle": "Professor of Public Finance", "affiliation": {"@type": "CollegeOrUniversity", "name": "Çanakkale Onsekiz Mart Üniversitesi"}, "email": "mailto:mehmetsahin@comu.edu.tr", "image": "https://profmehmetsahin.com/img/mehmet-sahin.webp", "url": "https://profmehmetsahin.com/", "identifier": [{"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-7170-3198"}, {"@type": "PropertyValue", "propertyID": "ResearcherID", "value": "G-4366-2015"}, {"@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "60613922800"}], "sameAs": ["https://www.linkedin.com/in/mehmet-%C5%9Fahin-69383846/", "https://x.com/mehmetsahin17", "https://www.instagram.com/msahin1967/", "https://askonomi.com", "https://orcid.org/0000-0002-7170-3198", "https://www.webofscience.com/wos/author/record/G-4366-2015", "https://www.scopus.com/authid/detail.uri?authorId=60613922800", "https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&authorId=5D47948394A62402", "https://holistence.github.io/dersler/"], "knowsAbout": ["Fiscal policy", "Public finance", "Regional development", "Public–private partnerships", "Civil society"]}</script>
 <style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -137,10 +137,23 @@ a.wk:hover{background:var(--strait);color:var(--bg)}
 .ids a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--ink);font-family:var(--f-mono);font-size:.9rem;min-width:0}
 .ids a span{font-family:var(--f-body);font-size:.78rem;color:var(--muted)}
 .ids a:hover{border-color:var(--strait)}
+
+.social{display:flex;gap:6px}
+.social a{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--muted);transition:color .2s,border-color .2s,background .2s}
+.social a:hover{color:var(--bg);background:var(--strait);border-color:var(--strait)}
+.social svg{width:16px;height:16px;fill:currentColor}
+.askonomi{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:2px 10px;padding:12px 14px;border-radius:10px;background:var(--mustard-soft);text-decoration:none;color:var(--ink);border:1px solid transparent;transition:border-color .2s,transform .2s}
+.askonomi:hover{border-color:var(--mustard);transform:translateY(-1px)}
+.askonomi .ak-k{font-family:var(--f-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mustard)}
+.askonomi b{font-family:var(--f-display);font-weight:500;font-size:1.3rem;line-height:1}
+.askonomi .ak-u{grid-column:1/-1;font-family:var(--f-mono);font-size:.78rem;color:var(--mustard)}
+a.book-link{text-decoration:none;color:var(--ink)}
+.book .go{margin-top:auto;font-family:var(--f-mono);font-size:.8rem;color:var(--mustard)}
 @media (max-width:900px){
   .shell{grid-template-columns:minmax(0,1fr)}
   .side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:22px 16px;gap:16px}
   .side .meta{display:none}
+  .askonomi{grid-template-columns:auto auto 1fr}.askonomi .ak-u{grid-column:auto}
   nav.menu{flex-direction:row;flex-wrap:wrap;gap:4px}
   nav.menu a{padding:6px 10px;font-size:.9rem}
   nav.menu a span{display:none}
@@ -166,6 +179,12 @@ a.wk:hover{background:var(--strait);color:var(--bg)}
       <h1>Mehmet Şahin</h1>
       <p data-en="Çanakkale Onsekiz Mart University&lt;br&gt;Fiscal policy · Public finance theory · Fiscal economics">Çanakkale Onsekiz Mart Üniversitesi<br>Maliye politikaları · Maliye kuramı · Mali iktisat</p>
     </div>
+    <div class="social" aria-label="Sosyal medya">
+      <a href="https://www.linkedin.com/in/mehmet-%C5%9Fahin-69383846/" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg></a>
+      <a href="https://x.com/mehmetsahin17" title="X · @mehmetsahin17" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77L17.75 3Zm-1.08 16.17h1.7L7.4 4.74H5.57l11.1 14.43Z"/></svg></a>
+      <a href="https://www.instagram.com/msahin1967/" title="Instagram · @msahin1967" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6Zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2Zm6.1-8.1a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 3.6c2.7 0 3 0 4.1.06 2.7.12 4 1.4 4.1 4.1.05 1.06.06 1.38.06 4.1s0 3-.06 4.1c-.12 2.7-1.4 4-4.1 4.1-1.06.05-1.38.06-4.1.06s-3 0-4.1-.06c-2.7-.12-4-1.4-4.1-4.1C3.6 15 3.6 14.7 3.6 12s0-3 .06-4.1C3.8 5.2 5.1 3.9 7.9 3.7 9 3.6 9.3 3.6 12 3.6ZM12 2c-2.7 0-3.1 0-4.2.06C4.2 2.2 2.2 4.2 2.06 7.8 2 8.9 2 9.3 2 12s0 3.1.06 4.2c.16 3.6 2.16 5.6 5.74 5.74C8.9 22 9.3 22 12 22s3.1 0 4.2-.06c3.6-.16 5.6-2.16 5.74-5.74.06-1.1.06-1.5.06-4.2s0-3.1-.06-4.2C21.8 4.2 19.8 2.2 16.2 2.06 15.1 2 14.7 2 12 2Z"/></svg></a>
+    </div>
+    <a class="askonomi" href="https://askonomi.com"><span class="ak-k" data-en="Book">Kitap</span><b>Aşkonomi</b><span class="ak-u">askonomi.com →</span></a>
     <nav class="menu" aria-label="Ana menü">
       <a href="#home" data-v="home" data-en="Home">Ana Sayfa</a>
       <a href="#cv" data-v="cv" data-en="CV">Özgeçmiş</a>
@@ -203,7 +222,7 @@ a.wk:hover{background:var(--strait);color:var(--bg)}
         <p class="eyebrow" data-en="Forthcoming">Yakında</p>
         <h2 data-en="Books in preparation">Yayına hazırlanan kitaplar</h2>
         <div class="soon">
-          <article class="book"><span class="tag" data-en="General readers">Genel okur</span><h3>Aşkonomi</h3><p data-en="A semi-academic book, in Turkish, on how economics shows up in everyday life — without tables or charts.">Ekonominin gündelik hayattaki karşılığını tablosuz, grafiksiz anlatan yarı akademik bir kitap.</p></article>
+          <a class="book book-link" href="https://askonomi.com"><span class="tag" data-en="General readers">Genel okur</span><h3>Aşkonomi</h3><p data-en="A semi-academic book, in Turkish, on how economics shows up in everyday life — without tables or charts.">Ekonominin gündelik hayattaki karşılığını tablosuz, grafiksiz anlatan yarı akademik bir kitap.</p><span class="go">askonomi.com →</span></a>
           <article class="book"><span class="tag" data-en="Data · Policy">Veri · Politika</span><h3>Çanakkale'nin Pusulası</h3><p data-en="Twenty-five years of provincial data on Çanakkale, its problem areas, projections to 2035 and 25 policy packages (in Turkish).">25 yıllık il verisi, sorun alanları, 2035 projeksiyonları ve 25 politika paketi.</p></article>
           <article class="book"><span class="tag" data-en="Essay">Deneme</span><h3>Şehir Büyürken</h3><p data-en="A literary reading, built on the same data, of what a growing city does to the people who live in it (in Turkish).">Aynı veriden yola çıkıp büyüyen bir kentin insanlara ne yaptığını anlatan edebî bir okuma.</p></article>
         </div>
@@ -305,6 +324,10 @@ a.wk:hover{background:var(--strait);color:var(--bg)}
       <div class="contact-list">
         <div class="copyrow"><code id="mail">mehmetsahin@comu.edu.tr</code><button class="btn" type="button" data-copy="mail" data-en="Copy">Kopyala</button></div>
         <div class="ids">
+          <a href="https://www.linkedin.com/in/mehmet-%C5%9Fahin-69383846/"><span>LinkedIn</span>Mehmet Şahin</a>
+          <a href="https://x.com/mehmetsahin17"><span>X</span>@mehmetsahin17</a>
+          <a href="https://www.instagram.com/msahin1967/"><span>Instagram</span>@msahin1967</a>
+          <a href="https://askonomi.com"><span data-en="Book · Aşkonomi">Kitap · Aşkonomi</span>askonomi.com</a>
           <a href="https://orcid.org/0000-0002-7170-3198"><span>ORCID</span>0000-0002-7170-3198</a>
           <a href="https://www.webofscience.com/wos/author/record/G-4366-2015"><span>Web of Science ResearcherID</span>G-4366-2015</a>
           <a href="https://www.scopus.com/authid/detail.uri?authorId=60613922800"><span>Scopus Author ID</span>60613922800</a>
