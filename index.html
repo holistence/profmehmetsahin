@@ -84,6 +84,21 @@ section+section{margin-top:52px}
 .stats span{color:var(--muted);font-size:.84rem}
 .stats .src{grid-column:1/-1;font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
 .soon{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;align-items:end}
+.cover-btn{padding:0;border:0;background:none;cursor:pointer;border-radius:4px;aspect-ratio:540/840;display:block;width:100%;box-shadow:0 10px 26px rgba(20,35,43,.18);transition:transform .25s,box-shadow .25s;overflow:hidden}
+.cover-btn:hover,.cover-btn:focus-visible{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 18px 36px rgba(20,35,43,.28)}
+.cover-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{display:flex;flex-direction:column;justify-content:space-between;width:100%;aspect-ratio:540/840;padding:18px 16px;background:linear-gradient(160deg,var(--strait),#0a3540);color:#f4f6f4;text-align:left;border-radius:4px}
+.ph-t{font-family:var(--f-display);font-size:1.45rem;line-height:1.1}
+.ph-n{font-family:var(--f-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;opacity:.75}
+.book-dlg{border:0;border-radius:12px;padding:30px 28px 26px;max-width:min(760px,calc(100vw - 32px));width:100%;background:var(--surface);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.book-dlg::backdrop{background:rgba(10,20,25,.55);backdrop-filter:blur(2px)}
+.book-dlg .pen{margin-top:0}
+.book-dlg .ph-t{font-size:1.9rem}
+.dlg-go{display:inline-block;margin-top:4px;font-family:var(--f-mono);font-size:.85rem;color:var(--mustard);font-weight:500}
+.dlg-x{position:absolute;top:12px;right:14px;background:none;border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer;color:var(--muted);font-size:.85rem}
+.dlg-x:hover{color:var(--ink);border-color:var(--ink)}
+
 .book{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:transform .25s,border-color .25s}
 .book:hover{transform:translateY(-3px);border-color:var(--mustard)}
 .tag{align-self:flex-start;background:var(--mustard-soft);color:var(--mustard);font-family:var(--f-mono);font-size:.68rem;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.08em}
@@ -171,6 +186,10 @@ a.book-link{text-decoration:none;color:var(--ink)}
   .hero{grid-template-columns:minmax(0,1fr)}
   .hero .photo{max-width:200px;order:-1}
   .soon{grid-template-columns:minmax(0,1fr)}
+  .shelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .book-dlg{padding:26px 16px 20px}
+  .book-dlg .pen{grid-template-columns:minmax(0,1fr);gap:18px}
+  .book-dlg .pen>img,.book-dlg .pen>.ph{max-width:160px}
   .pen{grid-template-columns:minmax(0,1fr);gap:20px}.pen img{max-width:200px}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .year{grid-template-columns:minmax(0,1fr);gap:6px}
@@ -234,11 +253,11 @@ a.book-link{text-decoration:none;color:var(--ink)}
       <section>
         <p class="eyebrow" data-en="Forthcoming">Yakında</p>
         <h2 data-en="Books in preparation">Yayına hazırlanan kitaplar</h2>
-        <div class="soon">
-          <a class="book book-link" href="https://askonomi.com"><span class="tag" data-en="General readers">Genel okur</span><h3>Aşkonomi</h3><p data-en="A semi-academic book, in Turkish, on how economics shows up in everyday life — without tables or charts.">Ekonominin gündelik hayattaki karşılığını tablosuz, grafiksiz anlatan yarı akademik bir kitap.</p><span class="go">askonomi.com →</span></a>
-          <article class="book"><span class="tag" data-en="Data · Policy">Veri · Politika</span><h3>Çanakkale'nin Pusulası</h3><p data-en="Twenty-five years of provincial data on Çanakkale, its problem areas, projections to 2035 and 25 policy packages (in Turkish).">25 yıllık il verisi, sorun alanları, 2035 projeksiyonları ve 25 politika paketi.</p></article>
-          <a class="book book-link" href="sehir-buyurken/"><span class="tag" data-en="Urban essay">Kent Denemesi</span><h3>Şehir Büyürken</h3><p class="sub" data-en="Çanakkale: a growing city, narrowing lives">Çanakkale'de Büyüyen Kent, Daralan Hayatlar</p><p data-en="A literary reading, built on the same data, of what a growing city does to the people who live in it (in Turkish).">Aynı veriden yola çıkıp büyüyen bir kentin insanlara ne yaptığını anlatan edebî bir okuma.</p><span class="go" data-en="Book, seminar, questions →">Kitap, sunum, sorular →</span></a>
-          <a class="book book-link" href="#literature"><span class="tag" data-en="Short stories · Bilge Adalan">Öykü · Bilge Adalan</span><h3>Kavuşamayanlar</h3><p data-en="Five stories about loving and not reaching each other, published under my literary name, Bilge Adalan (in Turkish).">Sevmek ve kavuşamamak üzerine beş öykü; edebi adım Bilge Adalan ile.</p><span class="go" data-en="Literature →">Edebiyat →</span></a>
+        <div class="shelf">
+          <button type="button" class="cover-btn" data-book="askonomi" aria-haspopup="dialog" aria-label="Aşkonomi"><span class="ph"><span class="ph-t">Aşkonomi</span><span class="ph-n" data-en="Cover coming soon">Kapak yakında</span></span></button>
+          <button type="button" class="cover-btn" data-book="pusula" aria-haspopup="dialog" aria-label="Çanakkale'nin Pusulası"><span class="ph"><span class="ph-t">Çanakkale'nin Pusulası</span><span class="ph-n" data-en="Cover coming soon">Kapak yakında</span></span></button>
+          <button type="button" class="cover-btn" data-book="sehir" aria-haspopup="dialog" aria-label="Şehir Büyürken"><img src="img/sehir-buyurken.webp" width="540" height="840" alt="" loading="lazy"></button>
+          <button type="button" class="cover-btn" data-book="kavusamayanlar" aria-haspopup="dialog" aria-label="Kavuşamayanlar"><img src="img/kavusamayanlar.webp" width="540" height="840" alt="" loading="lazy"></button>
         </div>
       </section>
 
@@ -374,6 +393,10 @@ a.book-link{text-decoration:none;color:var(--ink)}
   </main>
 </div>
 
+<dialog class="book-dlg" id="dlg-askonomi" aria-labelledby="dlg-askonomi-t"><div class="pen"><span class="ph"><span class="ph-t">Aşkonomi</span><span class="ph-n" data-en="Cover coming soon">Kapak yakında</span></span><div><span class="tag" data-en="General readers">Genel okur</span><h3 id="dlg-askonomi-t">Aşkonomi</h3><p data-en="A semi-academic book, in Turkish, on how economics shows up in everyday life — without tables or charts.">Ekonominin gündelik hayattaki karşılığını tablosuz, grafiksiz anlatan yarı akademik bir kitap.</p><a class="dlg-go" href="https://askonomi.com" data-en="askonomi.com →">askonomi.com →</a></div></div><button type="button" class="dlg-x" data-en="Close">Kapat</button></dialog>
+<dialog class="book-dlg" id="dlg-pusula" aria-labelledby="dlg-pusula-t"><div class="pen"><span class="ph"><span class="ph-t">Çanakkale'nin Pusulası</span><span class="ph-n" data-en="Cover coming soon">Kapak yakında</span></span><div><span class="tag" data-en="Data · Policy">Veri · Politika</span><h3 id="dlg-pusula-t">Çanakkale'nin Pusulası</h3><p data-en="Twenty-five years of provincial data on Çanakkale, its problem areas, projections to 2035 and 25 policy packages (in Turkish).">25 yıllık il verisi, sorun alanları, 2035 projeksiyonları ve 25 politika paketi.</p></div></div><button type="button" class="dlg-x" data-en="Close">Kapat</button></dialog>
+<dialog class="book-dlg" id="dlg-sehir" aria-labelledby="dlg-sehir-t"><div class="pen"><img src="img/sehir-buyurken.webp" width="540" height="840" alt="Şehir Büyürken ön kapak"><div><span class="tag" data-en="Urban essay">Kent Denemesi</span><h3 id="dlg-sehir-t">Şehir Büyürken</h3><p class="by" data-en="Çanakkale: a growing city and everyday life">Çanakkale'de Büyüyen Kent ve Gündelik Hayat</p><blockquote data-en="Why do people’s lives not change in the same direction as their cities grow?">Kentler büyürken insanların hayatları neden aynı yönde değişmez?</blockquote><p data-en="When a city grows, not every life grows with it. The book follows the distance between what Çanakkale has and what its people can actually do, setting official data beside everyday scenes (in Turkish).">Bir şehir büyürken herkesin hayatı aynı ölçüde genişlemez. Kitap, Çanakkale'nin sahip oldukları ile insanların gerçekten yapabildikleri arasındaki mesafeyi izliyor. Resmî veriler ile gündelik sahneler yan yana duruyor.</p><a class="dlg-go" href="sehir-buyurken/" data-en="Book, seminar and questions →">Kitap, sunum ve sorular →</a></div></div><button type="button" class="dlg-x" data-en="Close">Kapat</button></dialog>
+<dialog class="book-dlg" id="dlg-kavusamayanlar" aria-labelledby="dlg-kavusamayanlar-t"><div class="pen"><img src="img/kavusamayanlar.webp" width="540" height="840" alt="Kavuşamayanlar ön kapak"><div><span class="tag" data-en="Short stories · Bilge Adalan">Öykü · Bilge Adalan</span><h3 id="dlg-kavusamayanlar-t">Kavuşamayanlar</h3><p class="by" data-en="Five stories">Beş Öykü</p><blockquote data-en="When people speak of someone far away, they talk. When they speak of someone close, they fall silent.">Uzaktakini anlatırken insanlar konuşur.<br>Yakındakini anlatırken susarlar.</blockquote><p data-en="Five stories about loving and not reaching each other, published under my literary name, Bilge Adalan (in Turkish).">Sevmek ve kavuşamamak üzerine beş öykü; edebi adım Bilge Adalan ile.</p><a class="dlg-go" href="#literature" data-en="Literature →">Edebiyat →</a></div></div><button type="button" class="dlg-x" data-en="Close">Kapat</button></dialog>
 <script>
 /* [yıl, tür, yazarlar, başlık, yayın yeri/künye, doi] — kaynak: YÖK Akademik + Google Scholar (Ekim 2026) */
 const P=[
@@ -609,6 +632,8 @@ document.querySelector(".lang").addEventListener("click",e=>{const b=e.target.cl
 let start="tr";
 try{const u=new URLSearchParams(location.search).get("lang");const st=localStorage.getItem("lang");
   start=u||st||((navigator.language||"tr").toLowerCase().startsWith("tr")?"tr":"en");}catch(e){}
+document.querySelectorAll(".cover-btn").forEach(b=>b.addEventListener("click",()=>{const d=document.getElementById("dlg-"+b.dataset.book);if(d&&d.showModal){d.showModal();d.querySelector(".dlg-x").focus();}}));
+document.querySelectorAll(".book-dlg").forEach(d=>{d.querySelector(".dlg-x").addEventListener("click",()=>d.close());d.addEventListener("click",e=>{if(e.target===d)d.close();});d.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>d.close()));});
 setLang(start);route();
 </script>
 
