@@ -329,7 +329,62 @@
     durdur(); ciz(); D.dokundu = true;
   }
 
-  function hepsi() { egri(); hikaye(); kesif(); }
+  /* ---------- belediye bütçesi ---------- */
+  function butce() {
+    var B = window.CKLB, svg = $('bSvg'); if (!B || !svg) return;
+    var n = B.yillar.length, olcu = 'kb';
+    function seri(k, o) { return B[k].map(function (v, i) { return o === 'cari' ? v / 1e6 : o === 'reel' ? v * B.carpan[i] / 1e6 : v * B.carpan[i] / B.nufus[i]; }); }
+    function bicim(v, o) { return o === 'kb' ? sayi(v) + ' TL' : sayi(v, 0) + ' milyon TL'; }
+    var W, H, L, R = 24, T = 18, Bt, fs;
+    var x = function (i) { return L + (W - L - R) * i / (n - 1); };
+    function ciz() {
+      var dar = svg.parentNode.clientWidth < 600;
+      W = dar ? 520 : 900; H = dar ? 460 : 400; L = dar ? 92 : 78; Bt = dar ? 44 : 36; fs = dar ? 20 : 13;
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+      var g = seri('gelir', olcu), d = seri('gider', olcu), hep = g.concat(d);
+      var mx = Math.max.apply(null, hep) * 1.08, mn = olcu === 'kb' ? 0 : 0;
+      var adim = Math.pow(10, Math.floor(Math.log10(mx / 4))); var a = [1, 2, 2.5, 5, 10].map(function (k) { return k * adim; }).filter(function (k) { return mx / k <= 6; })[0];
+      var y = function (v) { return T + (H - T - Bt) * (1 - (v - mn) / (mx - mn)); };
+      var h = '';
+      for (var i = 0; i < n; i++) if (d[i] > g[i]) h += '<rect x="' + (x(i) - (W - L - R) / (n - 1) / 2).toFixed(1) + '" y="' + T + '" width="' + ((W - L - R) / (n - 1)).toFixed(1) + '" height="' + (H - T - Bt) + '" fill="var(--mustard-soft)"/>';
+      for (var v = 0; v <= mx; v += a) h += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--line)"/><text class="eks" x="' + (L - 8) + '" y="' + (y(v) + fs / 3) + '" text-anchor="end" style="font-size:' + fs + 'px">' + sayi(v) + '</text>';
+      B.yillar.forEach(function (yy, i) { if (i % 2 === 0 || n < 8) h += '<text class="eks" x="' + x(i) + '" y="' + (H - 10) + '" text-anchor="middle" style="font-size:' + fs + 'px">' + yy + '</text>'; });
+      function yol(s) { return s.map(function (v, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(''); }
+      h += '<path d="' + yol(g) + '" fill="none" stroke="var(--strait)" stroke-width="3" stroke-linejoin="round"/>';
+      h += '<path d="' + yol(d) + '" fill="none" stroke="var(--terra)" stroke-width="3" stroke-linejoin="round" stroke-dasharray="7 5"/>';
+      g.forEach(function (v, i) { h += '<circle cx="' + x(i) + '" cy="' + y(v) + '" r="4.5" fill="var(--strait)"/><circle cx="' + x(i) + '" cy="' + y(d[i]) + '" r="4" fill="var(--terra)"/>'; });
+      h += '<line id="bImlec" y1="' + T + '" y2="' + (H - Bt) + '" stroke="var(--ink)" stroke-width="1" visibility="hidden"/>';
+      for (i = 0; i < n; i++) h += '<rect class="bVur" data-i="' + i + '" x="' + (x(i) - (W - L - R) / (n - 1) / 2) + '" y="0" width="' + ((W - L - R) / (n - 1)) + '" height="' + H + '" fill="transparent" tabindex="0" aria-label="' + B.yillar[i] + ': gelir ' + bicim(g[i], olcu) + ', gider ' + bicim(d[i], olcu) + '"/>';
+      svg.innerHTML = h;
+      var ip = $('bIpucu'), im = $('bImlec');
+      svg.querySelectorAll('.bVur').forEach(function (r) {
+        function goster() {
+          var i = +r.dataset.i, k = svg.getBoundingClientRect(), sx = k.width / W;
+          im.setAttribute('x1', x(i)); im.setAttribute('x2', x(i)); im.setAttribute('visibility', 'visible');
+          ip.hidden = false; ip.innerHTML = '<b>' + B.yillar[i] + '</b><br>Gelir ' + bicim(g[i], olcu) + '<br>Gider ' + bicim(d[i], olcu) + '<br>Gider/gelir %' + sayi(d[i] / g[i] * 100);
+          var px = x(i) * sx + 12; if (px + ip.offsetWidth > k.width) px = x(i) * sx - ip.offsetWidth - 12;
+          ip.style.left = px + 'px'; ip.style.top = (T * sx + 8) + 'px'; ip.style.whiteSpace = 'nowrap'; ip.style.lineHeight = '1.4';
+        }
+        r.addEventListener('mouseenter', goster); r.addEventListener('focus', goster); r.addEventListener('click', goster);
+        r.addEventListener('mouseleave', function () { ip.hidden = true; im.setAttribute('visibility', 'hidden'); });
+        r.addEventListener('blur', function () { ip.hidden = true; im.setAttribute('visibility', 'hidden'); });
+      });
+      $('bGos').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.o === olcu ? 'true' : 'false'); });
+    }
+    $('bGos').querySelectorAll('button').forEach(function (b) { b.onclick = function () { olcu = b.dataset.o; ciz(); }; });
+    ciz();
+    var sonGen = svg.parentNode.clientWidth; window.addEventListener('resize', function () { var g2 = svg.parentNode.clientWidth; if ((g2 < 600) !== (sonGen < 600)) ciz(); sonGen = g2; });
+    var gr = seri('gelir', 'reel'), kb = seri('gelir', 'kb'), dk = seri('gider', 'kb'), son = n - 1;
+    var bant = kb.slice(0, n - 2), acik = [];
+    for (var i = 0; i < n; i++) if (B.gider[i] > B.gelir[i]) acik.push(B.yillar[i]);
+    var enAcik = 0; for (i = 1; i < n; i++) if (B.gider[i] / B.gelir[i] > B.gider[enAcik] / B.gelir[enAcik]) enAcik = i;
+    $('bOlgu').innerHTML =
+      '<div><b>×' + sayi(gr[son] / gr[0], 1) + '</b><span>Reel net gelir, ' + B.yillar[0] + '→' + B.yillar[son] + ' (' + sayi(gr[0]) + ' → ' + sayi(gr[son]) + ' milyon TL)</span></div>' +
+      '<div><b>' + sayi(Math.min.apply(null, bant)) + '–' + sayi(Math.max.apply(null, bant)) + ' TL</b><span>Kişi başı reel gelir bandı, ' + B.yillar[0] + '–' + B.yillar[n - 3] + '. ' + B.yillar[son] + ': ' + sayi(kb[son]) + ' TL</span></div>' +
+      '<div><b>' + acik.length + ' yıl</b><span>Gider gelirden fazla (' + acik.join(', ') + '). En yüksek ' + B.yillar[enAcik] + ': gider gelirin %' + se(Math.round(B.gider[enAcik] / B.gelir[enAcik] * 100), 'i') + '</span></div>';
+  }
+
+  function hepsi() { egri(); hikaye(); kesif(); butce(); }
   // tema değişince yeniden boya
   if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { if (window.CKLH) setT(S.son * SURE + 0.01); });
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hepsi); else hepsi();
