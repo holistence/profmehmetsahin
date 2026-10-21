@@ -1,0 +1,26 @@
+belediye,ilce,yil,kaynak,net_gelir_reel24,gider_reel24,kb_gelir_reel24,kb_gider_reel24,gelir_gercek,gider_gelir,dogrulama
+Ayvacık Belediyesi,Ayvacık,2023,Sayıştay,152907847,155352999,4351,4421,87.7,101.6,iki_okuma_esit
+Biga Belediyesi,Biga,2014,Sayıştay,329661551,358874645,3812,4150,75.1,108.9,iki_okuma_esit
+Bozcaada Belediyesi,Bozcaada,2024,Faaliyet raporu,120862830,119635205,35939,35574,88.2,99.0,iki_okuma_esit
+Eceabat Belediyesi,Eceabat,2024,Sayıştay,104471343,119123664,11834,13494,65.4,114.0,iki_okuma_esit
+Ezine Belediyesi,Ezine,2024,Sayıştay,262534417,299652546,8253,9420,42.3,114.1,iki_okuma_esit
+Gelibolu Belediyesi,Gelibolu,2015,Sayıştay,287156846,318935426,6507,7227,84.5,111.1,iki_okuma_esit
+Gelibolu Belediyesi,Gelibolu,2016,Sayıştay,298430155,354342673,6800,8074,82.6,118.7,iki_okuma_esit
+Gelibolu Belediyesi,Gelibolu,2017,Sayıştay,313397644,395611194,7110,8975,74.0,126.2,iki_okuma_esit
+Gelibolu Belediyesi,Gelibolu,2023,Sayıştay,378329740,461381035,8509,10377,77.0,122.0,iki_okuma_esit
+Gelibolu Belediyesi,Gelibolu,2024,Faaliyet raporu,451858947,542163771,10229,12273,118.9,120.0,uc_okuma_cogunluk
+Gökçeada Belediyesi,Gökçeada,2021,Sayıştay,204164728,195882522,19675,18877,143.3,95.9,uc_okuma_cogunluk
+Gökçeada Belediyesi,Gökçeada,2023,Sayıştay,252260335,307098824,23530,28645,78.8,121.7,iki_okuma_esit
+Lapseki Belediyesi,Lapseki,2024,Faaliyet raporu,342088136,372182308,11217,12204,83.3,108.8,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2014,Sayıştay,972420626,1040538428,6247,6685,61.6,107.0,uc_okuma_cogunluk
+Çanakkale Belediyesi,Merkez,2015,Sayıştay,1121484333,1065461802,7020,6669,90.5,95.0,uc_okuma_cogunluk
+Çanakkale Belediyesi,Merkez,2016,Sayıştay,1258898655,1219771113,7606,7369,92.3,96.9,uc_okuma_cogunluk
+Çanakkale Belediyesi,Merkez,2017,Sayıştay,1344855156,1511763495,7683,8637,84.2,112.4,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2018,Sayıştay,1203913693,1586680506,6658,8775,72.5,131.8,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2019,Sayıştay,1115882750,1390616906,6044,7532,75.5,124.6,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2020,Sayıştay,1169324188,1236948548,6349,6716,95.2,105.8,uc_okuma_cogunluk
+Çanakkale Belediyesi,Merkez,2021,Sayıştay,1265584171,1245717081,6476,6374,95.1,98.4,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2022,Sayıştay,1452386959,1390524037,7341,7028,106.3,95.7,iki_okuma_esit
+Çanakkale Belediyesi,Merkez,2023,Sayıştay,1829468037,1733084574,8989,8515,97.4,94.7,uc_okuma_cogunluk
+Çanakkale Belediyesi,Merkez,2024,Sayıştay,2102840749,2234126461,10285,10927,87.2,106.2,iki_okuma_esit
+Çan Belediyesi,Çan,2015,Sayıştay,286751876,381151932,5858,7787,66.7,132.9,uc_okuma_cogunluk
