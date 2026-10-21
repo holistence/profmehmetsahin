@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Çanakkale'nin 12 İlçesi · Prof. Dr. Mehmet Şahin</title>
+<meta name="description" content="Şehir büyürken ilçeler: Çanakkale'nin 12 ilçesinde 2007–2025 nüfus, büyüme, yaşlanma, doğum, evlilik ve boşanma. Akan hikâye ve etkileşimli harita.">
+<link rel="canonical" href="https://profmehmetsahin.com/canakkale/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Şehir büyürken ilçeler · Çanakkale'nin 12 ilçesi, 2007–2025">
+<meta property="og:description" content="Merkez %80 büyüdü, altı ilçe küçüldü. Çanakkale'nin ilçe haritası yıl yıl.">
+<meta property="og:url" content="https://profmehmetsahin.com/canakkale/">
+<meta property="og:image" content="https://profmehmetsahin.com/canakkale/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Ana sitenin renk ve yazı sistemi (sehir-buyurken ile aynı) */
+:root{
+  --bg:#f4f6f4; --surface:#ffffff; --ink:#14232b; --muted:#5b6b70; --line:#d9e0dd;
+  --strait:#0e4a57; --strait-soft:#e2eeef; --mustard:#b98216; --mustard-soft:#f6ecd6;
+  --terra:#b4532f; --navy:#1e2b3c; --cream:#f3ede2; --map-stroke:#f4f6f4; --empty:#e6ebe8;
+  --f-display:"Newsreader","Iowan Old Style",Georgia,serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d1619; --surface:#132126; --ink:#e4ecea; --muted:#94a6a8; --line:#24363b;
+  --strait:#7cc3cf; --strait-soft:#173238; --mustard:#e2b04e; --mustard-soft:#2d2614;
+  --terra:#e8916c; --map-stroke:#0d1619; --empty:#1d2c31; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1619; --surface:#132126; --ink:#e4ecea; --muted:#94a6a8; --line:#24363b;
+  --strait:#7cc3cf; --strait-soft:#173238; --mustard:#e2b04e; --mustard-soft:#2d2614;
+  --terra:#e8916c; --map-stroke:#0d1619; --empty:#1d2c31; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--f-body)}
+a{color:var(--strait)}
+:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+@media(min-width:700px){.wrap{padding:0 24px}}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.top a{text-decoration:none;color:var(--muted);font-weight:500}
+.top a:hover{color:var(--strait)}
+.top nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem}
+.eyebrow{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.08em;color:var(--terra)}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;line-height:1.1;margin:0}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin:.4rem 0 .8rem}
+.lede{color:var(--muted);max-width:62ch;margin:0 0 24px}
+.not{font-size:.86rem;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;border:1px solid var(--strait);background:var(--strait);color:var(--bg);text-decoration:none;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--strait)}
+
+/* Açılış: 12 ilçenin büyüme eğrileri */
+.hero{display:grid;grid-template-columns:1fr;gap:28px;padding:44px 0 56px;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px}}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.4rem);letter-spacing:-.01em;margin:.5rem 0 .9rem}
+.hero p{max-width:52ch;margin:0 0 14px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.egri{width:100%;height:auto;display:block;overflow:visible}
+.egri .izgara{stroke:var(--line);stroke-width:1}
+.egri .eks{font:12px var(--f-mono);fill:var(--muted)}
+.egri .cizgi{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.egri .ad{font:500 13px var(--f-body)}
+.egri .yuz{font:600 13px var(--f-mono)}
+
+/* Hikâye */
+.sahne{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;overflow:hidden}
+@media(min-width:760px){.sahne{padding:26px 30px}}
+.s-ust{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.s-no{font:500 .78rem var(--f-mono);color:var(--muted);margin:0 0 6px;letter-spacing:.04em}
+.s-baslik{font-size:clamp(1.8rem,4.4vw,2.9rem)}
+.s-yil{font:500 clamp(2.6rem,8vw,5.2rem)/.9 var(--f-display);font-variant-numeric:tabular-nums;color:var(--ink)}
+.s-govde{display:grid;grid-template-columns:1fr;gap:14px 30px;margin-top:12px}
+@media(min-width:900px){.s-govde{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center}}
+.harita svg{display:block;width:100%;height:auto}
+.ilce{stroke:var(--map-stroke);stroke-width:1.6;transition:fill .55s ease}
+.ilce.vurgu{stroke:var(--ink);stroke-width:3}
+.etk{font:600 26px var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:7px;stroke-linejoin:round;pointer-events:none}
+.etk.k{font-size:21px}
+@media(max-width:640px){.etk{font-size:36px;stroke-width:9px}.etk.k{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.ilce{transition:none}}
+.s-grafik{width:100%;height:auto;display:block}
+.s-metin{font:500 clamp(1.08rem,2.2vw,1.3rem)/1.45 var(--f-display);min-height:5.2em;margin:10px 0 0}
+.lej{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin-top:6px}
+.lej .bar{display:flex;flex:1 1 220px;max-width:360px;height:10px;border-radius:2px;overflow:hidden}
+.lej .bar i{flex:1}
+.ilr{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin-top:16px}
+.ilr button{background:none;border:0;padding:0;cursor:pointer;text-align:left;color:var(--muted);min-width:0}
+.ilr button:before{content:"";display:block;height:4px;background:var(--line);border-radius:2px}
+.ilr button i{display:block;height:4px;margin-top:-4px;background:var(--terra);width:0;border-radius:2px;transition:width .7s linear}
+.ilr button span{display:block;font-size:.78rem;margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ilr button.simdi span{color:var(--ink);font-weight:600}
+@media(max-width:640px){.ilr button span{display:none}}
+.kontrol{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:12px}
+.k{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer;display:grid;place-items:center}
+.k svg{width:18px;height:18px;fill:var(--ink)}
+.k.oyna{width:60px;height:60px;background:var(--terra);border-color:var(--terra)}.k.oyna svg{width:24px;height:24px;fill:#fff}
+.perde{position:absolute;inset:0;z-index:3;display:grid;place-items:center;text-align:center;padding:20px;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(3px);transition:opacity .5s}
+.perde[hidden]{display:none}.perde.kalk{opacity:0;pointer-events:none}
+.perde h3{font-size:clamp(2rem,5vw,3rem);margin:.3rem 0 .6rem}
+.perde p{max-width:46ch;margin:0 auto 18px;color:var(--muted)}
+
+/* Keşif haritası */
+.gos{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.gos .grup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.gos .grup>small{font:500 .74rem var(--f-mono);color:var(--muted);width:100%;letter-spacing:.04em}
+.gos button{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:.9rem}
+.gos button em{font-style:normal;font:500 .7rem var(--f-mono);color:var(--muted);margin-left:4px}
+.gos button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gos button[aria-selected="true"] em{color:var(--line)}
+.kesif{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:900px){.kesif{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.zaman{display:flex;align-items:center;gap:12px;margin-top:8px}
+.zaman.kapali{opacity:.4}
+.zaman input{flex:1;accent-color:var(--terra)}
+.zaman b{font:500 1.6rem var(--f-display);min-width:3ch;font-variant-numeric:tabular-nums}
+.zaman .k{width:42px;height:42px}
+.kart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.kart h3{font-size:2rem;margin:2px 0 4px}
+.kart .buyuk{font:500 2.4rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.kart .birim{color:var(--muted);font-size:.9rem}
+.kart .sira{font:500 .78rem var(--f-mono);color:var(--muted)}
+.kart dl{display:grid;grid-template-columns:auto 1fr auto;gap:6px 12px;margin:14px 0 0;font-size:.92rem;align-items:center}
+.kart dt{color:var(--muted)}
+.kart dd{margin:0}
+.kart dd.v{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.cub{height:8px;background:var(--empty);border-radius:4px;position:relative}
+.cub i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}
+.cub u{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);text-decoration:none}
+.siralama ol{margin:8px 0 0;padding:0;list-style:none}
+.siralama li{display:grid;grid-template-columns:22px 1fr minmax(0,1.3fr) auto;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.siralama li button{background:none;border:0;padding:0;text-align:left;cursor:pointer;color:var(--ink)}
+.siralama li .n{font:500 .74rem var(--f-mono);color:var(--muted)}
+.siralama li .v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+.siralama li.sec{background:var(--strait-soft)}
+.uyari{font-size:.82rem;color:var(--terra);margin:8px 0 0}
+.ipucu{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);padding:5px 9px;border-radius:6px;font-size:.85rem;white-space:nowrap;z-index:4}
+.ipucu[hidden]{display:none}
+.harita-k{position:relative}
+.kaynak li{margin-bottom:8px}
+.kitap{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+@media(min-width:760px){.kitap{grid-template-columns:200px 1fr}}
+.kitap img{width:100%;max-width:220px;border-radius:4px;box-shadow:0 18px 40px rgba(20,35,43,.25)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a href="../">← Ana sayfa</a>
+    <nav aria-label="Sayfa içi"><a href="#hikaye">Hikâye</a><a href="#harita">Harita</a><a href="#kaynaklar">Kaynaklar</a><a href="../sehir-buyurken/">Şehir Büyürken</a></nav>
+  </header>
+  <main>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Çanakkale · 12 ilçe · 2007–2025</span>
+        <h1>Şehir büyürken ilçeler</h1>
+        <p>On sekiz yılda Çanakkale'nin nüfusu %20 arttı. Ama bu büyüme ilçelere eşit dağılmadı. Merkez %80 büyürken altı ilçe küçüldü.</p>
+        <p>Aşağıdaki hikâye bu ayrışmayı altı sahnede anlatıyor. Haritada ise her ilçeyi kendin keşfedebilirsin.</p>
+        <div class="cta"><a class="btn" href="#hikaye">Hikâyeyi izle</a><a class="btn ghost" href="#harita">Haritayı keşfet</a></div>
+      </div>
+      <svg class="egri" id="egri" viewBox="0 0 560 420" role="img" aria-label="12 ilçenin 2007=100 nüfus endeksi, 2007–2025"></svg>
+    </div>
+
+    <section id="hikaye">
+      <span class="eyebrow">Akan hikâye · altı sahne</span>
+      <h2>Merkez büyürken çevre</h2>
+      <p class="lede">Harita her sahnede kendi verisinin yıllarında akar. Durdurabilir, sahne atlayabilir ya da klavyede boşluk ve ok tuşlarıyla yönetebilirsin.</p>
+      <div class="sahne" id="sahne">
+        <div class="s-ust"><div><p class="s-no" id="sNo"></p><h3 class="s-baslik" id="sBaslik"></h3></div><div class="s-yil" id="sYil"></div></div>
+        <div class="s-govde">
+          <div class="harita"><svg id="sSvg" role="img" aria-label="Çanakkale ilçe haritası"></svg><div class="lej" id="sLej"></div></div>
+          <div><svg class="s-grafik" id="sGrafik" viewBox="0 0 440 300" role="img" aria-label="Sahne grafiği"></svg><p class="s-metin" id="sMetin" aria-live="polite"></p></div>
+        </div>
+        <div class="ilr" id="ilr"></div>
+        <div class="kontrol"><button class="k" id="geri" aria-label="Önceki sahne"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5L9 12l11 7z"/></svg></button><button class="k oyna" id="oyna" aria-label="Oynat"></button><button class="k" id="ileri" aria-label="Sonraki sahne"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5l11 7L4 19z"/></svg></button></div>
+        <div class="perde" id="perde"><div><span class="eyebrow">Yaklaşık bir dakika</span><h3>Çanakkale'nin 12 ilçesi</h3><p>Büyüyen Merkez, küçülen ilçeler, yaşlanan kırsal, doğumlar, evlilikler ve boşanmalar.</p><button class="btn" id="basla">Hikâyeyi başlat</button></div></div>
+      </div>
+    </section>
+
+    <section id="harita">
+      <span class="eyebrow">Keşif haritası</span>
+      <h2>İlçeni seç, göstergeyi değiştir</h2>
+      <p class="lede">Nüfus göstergeleri 2007–2025 arasında yıl yıl akar. Yaş, medeni durum ve nüfus hareketleri bulunabilen tek yıla aittir, düğmede yılı yazıyor.</p>
+      <div class="gos" id="gos" role="tablist" aria-label="Gösterge"></div>
+      <div class="kesif">
+        <div>
+          <div class="harita-k"><svg id="kSvg" role="img" aria-label="Çanakkale ilçe haritası, seçili gösterge"></svg><div class="ipucu" id="ipucu" hidden></div></div>
+          <div class="lej" id="kLej"></div>
+          <div class="zaman" id="zaman"><button class="k" id="kOyna" aria-label="Yılları oynat"></button><input type="range" id="kYil" min="0" max="18" value="18" aria-label="Yıl"><b id="kYilT"></b></div>
+        </div>
+        <div>
+          <div class="kart" id="kart" aria-live="polite"></div>
+          <div class="siralama" id="siralama"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="kitap">
+        <a href="../sehir-buyurken/"><img src="../sehir-buyurken/kapak.webp" alt="Şehir Büyürken kitabının kapağı" width="600" height="933"></a>
+        <div>
+          <span class="eyebrow">Kitap</span>
+          <h2>Bir kent büyürken insanlarına kaç seçenek bırakır?</h2>
+          <p class="lede">Bu sayfadaki sayılar, <em>Şehir Büyürken: Çanakkale'de Büyüyen Kent ve Gündelik Hayat</em> kitabının arka planı. Kitap, kentin sahip oldukları ile insanların gerçekten yapabildikleri arasındaki mesafeyi izliyor.</p>
+          <a class="btn" href="../sehir-buyurken/">Kitabı ve seminer sunumunu gör</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kaynaklar">
+      <span class="eyebrow">Kaynaklar ve yöntem</span>
+      <h2>Sayılar nereden geliyor?</h2>
+      <ul class="kaynak">
+        <li><b>Nüfus, erkek, kadın (2007–2025):</b> TÜİK Adrese Dayalı Nüfus Kayıt Sistemi, ilçe sonuçları; TÜİK'e dayanan ikincil kaynaklardan derlendi (nufusune.com, nufusu.com, urbistat, GMKA). 12 ilçenin toplamı 19 yılın her birinde TÜİK il toplamına birebir eşit.</li>
+        <li><b>65 yaş üstü payı ve medeni durum (2020):</b> TÜİK ADNKS, urbistat üzerinden. Boşanmışların evlilere oranı tabandan bağımsız olduğu için kullanıldı.</li>
+        <li><b>Medyan yaş (2021):</b> TÜİK, Güney Marmara Kalkınma Ajansı yayını üzerinden.</li>
+        <li><b>Doğum, evlenme ve boşanma (2025):</b> TÜİK Doğum, Evlenme ve Boşanma İstatistikleri, ilçe sonuçları; ikincil kaynak üzerinden. Evlenme (3.424) ve doğum (4.229) ilçe toplamları il toplamına eşit; boşanmada ilçe toplamı 1.563, il toplamı 1.524. Hızlar yıl ortası nüfusla hesaplandı. Bozcaada, Eceabat ve Gökçeada'da sayılar küçük olduğundan oranlar dikkatli okunmalı.</li>
+        <li><b>İlçe sınırları:</b> © OpenStreetMap katkıcıları, ODbL lisansı. Resmî idari sınır değildir.</li>
+      </ul>
+      <p class="not">TÜİK'in ilçe düzeyinde yaş grubu, göç ve eğitim serileri bu sayfaya eklendikçe gösterge listesi genişleyecek.</p>
+    </section>
+  </main>
+</div>
+<script src="veri.js"></script>
+<script src="uygulama.js"></script>
+</body>
+</html>
