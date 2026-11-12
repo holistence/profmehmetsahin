@@ -98,7 +98,7 @@
     if (o.ogr >= 6) return ['Öğrenci apartmanı', 'Apartmanın merdiveni hep kalabalık, ama komşuluk her eylül sıfırdan başlıyor. Kitabın cümlesiyle: “Apartmanın merdiveni aynıdır, fakat her eylül üç kata bavul taşıyan yeni bir öğrenci belirir.”'];
     if (o.bos >= 2) return ['Boşalan apartman', 'Işıklar tek tek sönüyor. Bina yerinde, ama içi seyreliyor. Kitap, haneler seyreldiğinde ve eski komşular gittiğinde bir sokağın başka bir tempoda yaşanmaya başladığını söyler.'];
     if (o.yasli >= 5 || o.ort >= 46) return ['Yaşlanan apartman', 'Çocuk sesi azaldı, asansör ve merdiven her yıl daha önemli. Kitabın cümlesiyle: “Kaldırımın yüksekliği değişmemiştir, fakat artık her sabah onu bastonla inen biri vardır.”'];
-    return ['Karma apartman', 'Çocuklar, yaşlılar ve öğrenciler aynı merdiveni paylaşıyor. Kitap aynı kentin aynı anda farklı hayat evrelerini taşıdığını, bu evrelerin şehirden beklediğinin çoğu zaman birbirini tutmadığını anlatır. Senin apartmanın bunun küçük bir örneği.'];
+    return ['Karma apartman', 'Çocuklar, yaşlılar, öğrenciler ve genç çiftler aynı merdiveni paylaşıyor. Sabah okul servisi, öğle pazar dönüşü, gece geç saatte dönen bir öğrenci. Apartmanın günü tek bir ritimle değil, üst üste binen birkaç ritimle akıyor. Bu, büyüyen şehirlerde giderek azalan bir karışım.'];
   }
   function son() {
     var o = ozet(D), t = tip(o), ilkO = ozet(basla());
