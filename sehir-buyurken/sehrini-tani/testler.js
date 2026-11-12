@@ -28,39 +28,40 @@
         ['D', 'İşlerin bitmesini bekliyorum, ya da yeni bitti'], ['A', 'Evde, çoktan sakinleşmiş bir sokakta']]]
     ],
     sonuclar: {
-      K: ['Şehri yeni keşfeden', 'Sen şehrin en hareketli evresindesin. Şehir senin için bir başlangıç, belki de bir durak. Kira, ulaşım ve gece açık bir yer bulmak gündeminde. Kitap, aynı kentin aynı yıl içinde öğrencileri, genç aileleri, çalışma hayatının ortasındaki yetişkinleri ve yaşlıları birlikte ağırladığını anlatır. Bu evrelerin şehirden beklediği çoğu zaman birbirini tutmaz. Bedeli şu: Şehir seni geçici sayabilir. Kalıp kalmayacağına çoğu zaman iş ve konut karar verir.', 'Yan yana duran hayat evreleri'],
-      Y: ['Yuva kuran', 'Senin şehrin çocuk ölçeğinde: okul yolu, park, güvenli bir kaldırım. Aynı mesafe senin için başka bir yolculuktur. Kitap bunu açıkça söyler: Yaşlı biri, bebek arabası iten bir ebeveyn ya da gece vardiyasından dönen bir işçi için aynı güzergâh başka bir yolculuğa dönüşür. Bedeli şu: Şehri çocuğunun adımlarıyla ölçtüğün için onun eksiklerini herkesten önce sen görürsün.', 'Gidebilmek ile rahat gidebilmek'],
-      D: ['Denge kuran', 'İş, ev ve büyüklerinin ihtiyaçları arasında gidip geliyorsun. Günün tek tek önemsiz görünen yolculuklardan oluşuyor. Kitaba göre işe gitmek, okula yetişmek, hastaneye uğramak, çocuğu bırakıp almak tek başına önemsiz görünür. Gün içinde birbirine eklendiklerinde ise zamanın nasıl kullanıldığını belirleyen sıkı bir örgü kurarlar. Bedeli şu: Bu örgüde en önce senin kendi zamanın kaybolur.', 'Gidebilmek ile rahat gidebilmek'],
-      A: ['Şehri yavaş yaşayan', 'Senin için şehir artık metreyle değil eğimle, kaldırımla, bankla ve durağın yeriyle ölçülüyor. Kitap bunu şöyle anlatır: Gençken birkaç yüz metre diye geçiştirilen bir mesafe, ileri yaşlarda yolun eğimi, kaldırımın hâli, soluklanacak bir bankın varlığı ve durağın yeriyle birlikte başka bir deneyime dönüşür. Bedeli şu: Şehir genişledikçe sana yakın olan şeyler azalabilir.', 'Yan yana duran hayat evreleri']
+      K: ['Şehri yeni keşfeden', 'Sen şehrin en hareketli evresindesin. Şehir senin için bir başlangıç, belki de bir durak. Kira, ulaşım ve gece açık bir yer bulmak gündeminde. Yeni insanlarla tanışmak senin için şehrin en büyük vaadi. Bedeli şu: Şehir seni geçici sayabilir. Kalıp kalmayacağına çoğu zaman iş ve konut karar verir.', 'Yan yana duran hayat evreleri'],
+      Y: ['Yuva kuran', 'Senin şehrin çocuk ölçeğinde: okul, park, güvenli bir kaldırım. Kitap aynı kentin aynı yıl içinde öğrencileri, küçük çocuklu genç aileleri, çalışma hayatının ortasındaki yetişkinleri ve yaşlıları birlikte ağırladığını anlatır. Bu evrelerin şehirden beklediği çoğu zaman birbirini tutmaz. Bedeli şu: Şehri çocuğunun gözüyle ölçtüğün için onun eksiklerini herkesten önce sen görürsün.', 'Yan yana duran hayat evreleri'],
+      D: ['Denge kuran', 'İş, ev ve büyüklerinin ihtiyaçları arasında gidip geliyorsun. Hem çocuklara hem anne babaya yetişmeye çalışan bir kuşağın ortasındasın. Şehir senin için bir sahne değil, her gün yeniden kurulan bir takvim. Bedeli şu: Bu takvimde en önce senin kendi zamanın kaybolur ve şehrin sunduğu şeylerin çoğunu yalnızca uzaktan görürsün.', 'Yan yana duran hayat evreleri'],
+      A: ['Şehrin hafızası', 'Sen şehri en uzun tanıyanlardansın. Bugünkü sokakların altında eski sokakları da görürsün. Kitap bir şehrin değiştiğini çoğu zaman haritaya bakınca değil, hafızamızı bugünle yüz yüze getirince fark ettiğimizi söyler. Sen bu yüzleşmeyi her gün yaşıyorsun. Bedeli şu: Şehir sana göre değil, gelenlere göre değişiyor ve tanıdık yerler birer birer azalıyor.', 'Hafıza ile harita arasında']
     }
   };
 
   // 2 -----------------------------------------------------------------
-  T['sokagin-degisti'] = {
+  T['evin-nerede'] = {
     sorular: [
-      ['Sokağındaki en eski komşunun durumu ne?', [
-        ['S', 'Hâlâ orada, her sabah selamlaşıyoruz'], ['Y', 'Orada, ama artık pek dışarı çıkamıyor'],
-        ['O', 'Gitti, evini kiraya verdi'], ['D', 'Bina yıkıldı, yerine yenisi yapıldı']]],
-      ['Sokakta en çok duyduğun ses ne?', [
-        ['S', 'Her zamanki çocuk ve satıcı sesleri'], ['Y', 'Sessizlik, arada bir açık kalan televizyon'],
-        ['O', 'Bavul tekerlekleri ve gece müziği'], ['D', 'İnşaat makineleri']]],
-      ['Köşedeki dükkânın hâli ne?', [
-        ['S', 'Aynı esnaf, aynı tabela'], ['Y', 'Kapandı, kepengi yıllardır inik'],
-        ['O', 'Yerinde bir kafe ya da ucuz yemek yeri var'], ['D', 'Yerinde bir zincir market var']]],
-      ['Apartmanındakileri tanıyor musun?', [
-        ['S', 'Hepsini, adlarıyla'], ['Y', 'Tanırım, çoğu artık tek başına yaşıyor'],
-        ['O', 'Her yıl yeni yüzler geliyor, tanıyamıyorum'], ['D', 'Yan bloktakileri hiç görmedim']]],
-      ['Sokaktaki çocuklar?', [
-        ['S', 'Eskisi kadar var'], ['Y', 'Çok azaldı'],
-        ['O', 'Çocuk yok, gençler var'], ['D', 'Var ama site bahçesinde oynuyorlar']]],
-      ['Sokağına yeni bir ad koysan?', [
-        ['S', 'Bildik Sokak'], ['Y', 'Sessiz Sokak'], ['O', 'Bavul Sokağı'], ['D', 'Vinç Sokağı']]]
+      ['Bütçen belli. Hangi evi seçersin?', [
+        ['M', 'Merkezde eski bir binada 2+1, her yere yürüyerek'], ['C', 'Şehrin kıyısında yeni bir sitede 3+1, otoparklı'],
+        ['K', 'Büyüdüğüm mahallede, tanıdık komşuların arasında'], ['G', 'Hangisi ucuzsa o, nasılsa birkaç yıl sonra taşınırım']]],
+      ['Kira bu yıl çok arttı. Ne yaparsın?', [
+        ['M', 'Daha küçük bir eve geçerim, ama merkezden çıkmam'], ['C', 'Daha uzağa, daha ucuza giderim'],
+        ['K', 'Ev sahibimle konuşur, kalmanın yolunu ararım'], ['G', 'Ev arkadaşı bulurum ya da şehir değiştiririm']]],
+      ['Ev bakarken ilk sorduğun soru ne?', [
+        ['M', 'Yürüyerek nerelere gidebilirim?'], ['C', 'Kaç metrekare, otoparkı var mı?'],
+        ['K', 'Komşular kimler?'], ['G', 'Depozito ne kadar, sözleşme kaç yıllık?']]],
+      ['Pencereden ne görmek istersin?', [
+        ['M', 'Sokağın hareketini'], ['C', 'Yeşil ve sessizlik'],
+        ['K', 'Tanıdık çatıları'], ['G', 'Fark etmez, manzaraya para vermem']]],
+      ['Bir çocuk bu evde büyüse nerede büyüsün isterdin?', [
+        ['M', 'Okula kendi yürüyebileceği bir yerde'], ['C', 'Site bahçesinde, güvende'],
+        ['K', 'Benim büyüdüğüm sokakta'], ['G', 'Nerede iş bulursam orada']]],
+      ['On yıl sonra evin?', [
+        ['M', 'Yine merkezde, belki yine kirada'], ['C', 'Kendi evim, şehrin kıyısında'],
+        ['K', 'Aynı mahalle, belki aynı ev'], ['G', 'Bilmiyorum, bu da iyi bir şey']]]
     ],
     sonuclar: {
-      S: ['Direnen sokak', 'Senin sokağın hâlâ tanıdık. Aynı esnaf, aynı yüzler, aynı sesler. Bu, büyüyen şehirlerde giderek azalan bir şey. Kitap, bir sokağın yerli yerinde durabileceğini, ama orada yaşayanlar değiştiğinde başka bir tempoda yaşanmaya başlayacağını söyler. Bedeli şu: Bu dengeyi sokağın kendisi değil, oradaki insanlar taşıyor. Biri gidince fark daha hızlı hissedilir.', 'Bir sokak yerli yerinde durabilir'],
-      Y: ['Yaşlanan sokak', 'Senin sokağın sessizleşiyor. Haneler seyreliyor, çocuk sesleri azalıyor, komşular evde daha uzun kalıyor. Kitabın cümlesiyle: “Kaldırımın yüksekliği değişmemiştir, fakat artık her sabah onu bastonla inen biri vardır.” Bedeli şu: Sokak aynı göründüğü için ihtiyaçları değişen insanlar görünmez kalabilir.', 'Yaşlanma ve gündelik mesafe'],
-      O: ['Döner kapılı sokak', 'Senin sokağın her yıl yenileniyor. Kiracılar, öğrenciler, kısa süre kalanlar geliyor ve gidiyor. Kitabın cümlesiyle: “Apartmanın merdiveni aynıdır, fakat her eylül üç kata bavul taşıyan yeni bir öğrenci belirir.” Bedeli şu: Herkesin geçici olduğu yerde komşuluk kurulmaya fırsat bulamaz.', 'Gelen ve giden insanlar'],
-      D: ['Yeniden yazılan sokak', 'Senin sokağın fiziksel olarak değişiyor. Eski binalar gidiyor, siteler ve zincir dükkânlar geliyor. Kitaba göre şehrin kıyısında yükselen her yeni konut dizisi, birkaç yüz hanenin gündelik coğrafyasını başka bir noktadan başlatır. Bedeli şu: Yeni binalar yeni insanlar getirir, ama eski bağlar binayla birlikte yıkılabilir.', 'Hafıza ile harita arasında']
+      M: ['Merkezde kalan', 'Sen metrekare yerine yakınlık satın alıyorsun. Evin küçük olabilir ama günün yürüme mesafesinde. Kitaba göre kentin büyümesi her şeyden önce uzaklık ve yakınlık duygusunun yeniden paylaştırılmasıdır. Sen bu paylaşımda yakın kalmayı seçenlerdensin. Bedeli şu: Bütçenin büyük kısmı konuta gider ve kira her yükseldiğinde bu seçimi yeniden savunmak zorunda kalırsın.', 'Uzaklık ve yakınlığın yeniden paylaşılması'],
+      C: ['Kıyıya açılan', 'Sen daha geniş bir ev, daha sakin bir çevre için şehrin kıyısına gidiyorsun. Kitap bunun bir adres değişikliğinden fazlası olduğunu anlatır: Bir mahallenin kente katılması yeni bir sabah güzergâhı, yeni bir okul yolu, yeni bir otobüs bekleyişi, yeni bir eve dönüş süresi demektir. Bedeli şu: Metrekareyi kazanırken zamanla ödersin.', 'Genişleyen harita'],
+      K: ['Mahalleye bağlı', 'Senin için ev, dört duvardan çok bir mahalle. Komşular, esnaf, tanıdık sokaklar. Daha büyük ya da daha yeni bir ev için bunları bırakmak istemiyorsun. Bedeli şu: Mahalle değiştiğinde, eski komşular gidip yerine yenileri geldiğinde, bağlı kaldığın şey de değişir. O zaman kalmanın anlamını yeniden düşünmen gerekir.', 'Mahalle ve aidiyet'],
+      G: ['Esnek kiracı', 'Sen eve değil, hayatın o anki ihtiyacına göre yerleşiyorsun. Bu esneklik bir güç. Kitap ise bunun öbür yüzünü bir zincir olarak anlatır: Kira tırmanır, insanlar şehrin kıyısına taşınır, yolda geçen süre artar, bakım yükü ve yorgunluk biner. Bedeli şu: Bu zincire en açık olan, her sözleşme bittiğinde yeniden karar vermek zorunda kalandır.', 'Kira, mesafe ve daralan hayat']
     }
   };
 
@@ -87,40 +88,40 @@
         ['D', 'Çocukluk arkadaşımı'], ['U', 'Başka şehirdeki ailemi']]]
     ],
     sonuclar: {
-      Y: ['Kök', 'Sen şehrin hafızasısın. Göç istatistiklerinde görünmezsin, ama şehri gelenlere anlatan sensin. TÜİK’e göre 2025’te Türkiye’de 2 milyon 475 bin kişi il değiştirdi. Bu, nüfusun yaklaşık yüzde üçü demek. Kalanların gözünden şehir her yıl biraz yeni yüzle dolar. Bedeli şu: Şehrin hep tanıdığın hâliyle kalmasını beklemek seni yeni gelenlerden uzaklaştırabilir.', 'Ne zaman gelip ne zaman gittikleri'],
-      G: ['Yeni gelen', 'Sen şehre sonradan katıldın ve şehri kendi bağlarınla yeniden kuruyorsun. TÜİK’in 2025 verisine göre iller arası göçün en sık nedenleri hanedeki birine bağlı taşınma, daha iyi konut ve yaşam koşulları ve eğitimdi. Kitap da bir şehrin gündelik nabzını, insanların nerede doğduğu ve ne zaman gelip gittiğinin yeniden ayarladığını söyler. Bedeli şu: Kök salmak zaman ister ve ilk yıllarda şehir sana ait değilmiş gibi gelebilir.', 'Ne zaman gelip ne zaman gittikleri'],
-      D: ['Dönen', 'Sen gidip geri gelenlerdensin. Şehri iki kez tanıdın: ayrılırken ve dönerken. Bu yüzden değişimi en net sen görürsün. Kitap bir şehrin değiştiğini çoğu zaman haritaya bakınca değil, hafızamızı bugünle yüz yüze getirince fark ettiğimizi söyler. Bedeli şu: Hatırladığın şehir ile döndüğün şehir aynı değil. Bu fark bazen bir yabancılık duygusu bırakır.', 'Hafıza ile harita arasında'],
-      U: ['Yolcu', 'Sen bu şehirde yoldasın. Okul, iş ya da bir dönem için buradasın ve geleceğini başka yerde tasarlıyor olabilirsin. TÜİK’e göre 2025’te en çok göç eden yaş grubu 20–24’tü. Kitap insanların geleceklerini nerede tasarladıklarının da şehrin nabzını değiştirdiğini anlatır. Bedeli şu: Geçici olduğunu düşündüğün şehre yatırım yapmazsın, şehir de sana yatırım yapmaz.', 'Geleceklerini nerede tasarladıkları']
+      Y: ['Kök', 'Sen şehrin hafızasısın. Göç hareketlerinde görünmezsin, ama şehri gelenlere anlatan sensin. Her yıl yeni yüzler gelip giderken sabit kalan sensin. Bedeli şu: Şehrin hep tanıdığın hâliyle kalmasını beklemek seni yeni gelenlerden uzaklaştırabilir. Bir şehrin yerlisi olmak, ona yeni gelenleri de kendi hikâyesine katabilmektir.', 'Ne zaman gelip ne zaman gittikleri'],
+      G: ['Yeni gelen', 'Sen şehre sonradan katıldın ve şehri kendi bağlarınla yeniden kuruyorsun. Kitap bir şehrin gündelik nabzını, insanların nerede doğduğunun ve ne zaman gelip gittiğinin yeniden ayarladığını söyler. Sen o nabzı değiştirenlerdensin. Bedeli şu: Kök salmak zaman ister ve ilk yıllarda şehir sana ait değilmiş gibi gelebilir.', 'Ne zaman gelip ne zaman gittikleri'],
+      D: ['Dönen', 'Sen gidip geri gelenlerdensin. Şehri iki kez tanıdın: ayrılırken ve dönerken. Bu yüzden değişimi en net sen görürsün. Kitabın cümlesiyle: Hafıza, haritanın yakalayamadığı bir şeyi saklar. Bir yerin nerede durduğunu değil, bir insana ne kadar uzak ya da yakın geldiğini. Bedeli şu: Hatırladığın şehir ile döndüğün şehir aynı değil.', 'Hafıza ile harita arasında'],
+      U: ['Yolcu', 'Sen bu şehirde yoldasın. Okul, iş ya da bir dönem için buradasın ve geleceğini başka yerde tasarlıyor olabilirsin. Şehir senin için bir istasyon. Bedeli şu: Geçici olduğunu düşündüğün şehre yatırım yapmazsın, şehir de sana yatırım yapmaz. Bazen bir istasyon, farkına varmadan bir adrese dönüşür.', 'Geleceklerini nerede tasarladıkları']
     }
   };
 
   // 4 -----------------------------------------------------------------
-  T['zamanin-nereye'] = {
+  T['secenekler'] = {
     sorular: [
-      ['Sabah evden çıkınca ilk ne yaparsın?', [
-        ['Y', 'Otobüse ya da dolmuşa yetişmeye çalışırım'], ['B', 'Durakta beklerim, gelmesini umarım'],
-        ['K', 'Yürürüm, gideceğim yer yakın'], ['D', 'Arabaya binip trafiğe girerim']]],
-      ['Haftanın en çok nerede kayboluyor?', [
-        ['Y', 'Aktarmalarda'], ['B', 'Hastane ya da resmî daire kuyruğunda'],
-        ['K', 'Pek kaybolmuyor, mesafeler kısa'], ['D', 'Park yeri ararken']]],
-      ['Bir uzman doktora gitmek senin için ne demek?', [
-        ['Y', 'Yarım gün: gidiş, dönüş, aktarma'], ['B', 'En zoru randevu bulmak'],
-        ['K', 'Kısa bir yolculuk'], ['D', 'Hastanenin otoparkında yer bulmak']]],
-      ['“Yakın” kelimesi senin için ne demek?', [
-        ['Y', 'Tek otobüsle gidilen yer'], ['B', 'Beklemeden ulaşılan yer'],
-        ['K', 'Yürüme mesafesi'], ['D', 'Arabayla on dakika']]],
-      ['Şehirde en çok neyin değişmesini isterdin?', [
-        ['Y', 'Daha sık sefer'], ['B', 'Daha az kuyruk, daha çok çevrim içi işlem'],
-        ['K', 'Daha iyi kaldırım, daha çok gölge'], ['D', 'Daha az trafik']]],
-      ['Akşam eve geldiğinde?', [
-        ['Y', 'Yolun yorgunluğu işin yorgunluğunu geçiyor'], ['B', 'Bütün gün bir şey beklemiş gibiyim'],
-        ['K', 'Hâlâ enerjim var'], ['D', 'Trafiğin sinirini atmaya çalışıyorum']]]
+      ['Şehrinde sevdiğin bir sanatçının konseri var. Ne olur?', [
+        ['Z', 'Giderim, bu tür şeylere sık giderim'], ['S', 'Bilet var ama saat, ulaşım ya da evdeki işler yüzünden gidemem'],
+        ['T', 'Bizim şehre pek gelmezler, başka şehre gitmem gerekir'], ['Y', 'Gelmezse arkadaşlarla kendimiz bir şey düzenleriz']]],
+      ['Bir uzman doktora görünmen gerekiyor.', [
+        ['Z', 'Şehirde birkaç seçenek var, istediğimi seçerim'], ['S', 'Var, ama randevu haftalar sonraya'],
+        ['T', 'Başka bir şehre gitmem gerekir'], ['Y', 'Bir tanıdık bulur, yolunu açarım']]],
+      ['İş değiştirmek istesen?', [
+        ['Z', 'Şehirde alternatif çok'], ['S', 'İlanlar var, ama bana uyan saatte ve yakında değil'],
+        ['T', 'Şehir değiştirmem gerekir'], ['Y', 'Kendi işimi kurarım ya da uzaktan çalışırım']]],
+      ['Hafta sonun nasıl geçer?', [
+        ['Z', 'Seçmekte zorlanırım'], ['S', 'Yapmak istediklerim var, vakit ya da para yetmiyor'],
+        ['T', 'Hep aynı birkaç yer'], ['Y', 'Kendi keşfettiğim yerlere giderim']]],
+      ['Bir çocuk için kurs ya da spor?', [
+        ['Z', 'Bol seçenek var'], ['S', 'Var, ama ücretli ve uzak'],
+        ['T', 'Neredeyse yok'], ['Y', 'Velilerle birlikte kendimiz organize ederiz']]],
+      ['“Bu şehir bana…”', [
+        ['Z', '…istediğim hayatı kurma imkânı veriyor.'], ['S', '…vitrinden bakmayı öğretti.'],
+        ['T', '…dar geliyor.'], ['Y', '…ne verdiyse onu büyüttüm.']]]
     ],
     sonuclar: {
-      Y: ['Yolcu', 'Senin günün yolda bölünüyor. Kitap bunu şöyle anlatır: Özel aracı olan biri için on dakikalık bir geçiş, toplu taşımaya bağlı biri için durağa yürümek, beklemek, belki aktarma yapmak ve yeniden yürümekle birlikte bir saate yaklaşır. Yolun uzunluğu sabittir, yolculuğun hayattaki ağırlığı kişiden kişiye değişir. Bedeli şu: Bu zaman hiçbir istatistikte senin adınla görünmez.', 'Gidebilmek ile rahat gidebilmek'],
-      B: ['Bekleyen', 'Senin zamanın yolda değil, beklerken gidiyor: durakta, kuyrukta, randevu sırasında. Kitap üç şeyi ayırır: bir yere varabilmek, o yolculuğun niteliği ve güvenliği. Bir hizmet birkaç kilometre ötede olabilir. Oraya düzenli ve makul bir bedelle ulaşamıyorsan fiziksel yakınlık kâğıt üzerinde kalır. Bedeli şu: Bekleme süresi görünmez olduğu için şikâyet de çoğu zaman kimseye ulaşmaz.', 'Yakınlık ve erişim'],
-      K: ['Yakın yaşayan', 'Sen şanslı olanlardansın. Günün yürüme mesafesinde dönüyor. Kitaba göre bir yere yakın olmak coğrafi konumla sınırlı değildir. Oraya ne kadar sürede, ne kadar güvenilir biçimde ve ne kadar yorularak varılabildiği de hesaba girer. Bedeli şu: Kent büyüdükçe bu ayrıcalık çepere taşınanların elinden ilk giden şeydir.', 'Yakınlık ve erişim'],
-      D: ['Direksiyondaki', 'Senin zamanın trafikte ve park yeri ararken eriyor. Kitap küçük gecikmelerin nasıl biriktiğini hesaplar: Bir yolculuğun on dakika uzaması devede kulak sayılır. Her gün gidiş ve dönüşte tekrarlandığında haftaya yüz dakika, yıla seksen saati aşkın bir süre ekler. Bedeli şu: Bu zaman küçük lokmalar hâlinde gittiği için farkına varmazsın.', 'Gidebilmek ile rahat gidebilmek']
+      Z: ['Seçenek zengini', 'Şehir sana bir menü sunuyor ve sen o menüden gerçekten seçebiliyorsun. Kitabın sorusu tam da bu: Bir kent büyürken insanlarına kaç gerçek seçenek bırakır? Senin cevabın şimdilik “çok”. Bedeli şu: Bu seçenekler herkese aynı kolaylıkla açık değil. Senin rahatça seçtiğin şey, aynı şehirde bir başkası için yalnızca bir vitrin olabilir.', 'Kaç gerçek seçenek'],
+      S: ['Vitrine bakan', 'Şehrin sahip oldukları ortada: hastane, konser salonu, kurslar, iş ilanları. Ama saat, ulaşım, ücret ya da bakım yükü araya giriyor. Kitap tam bu aralığı izler: kentin sahip oldukları ile insanların gerçekten yapabildikleri arasındaki mesafe. Bedeli şu: Seçenekler kâğıt üzerinde var olduğu için eksikliğin kimsenin gözüne çarpmaz.', 'Sahip olunan ile yapılabilen'],
+      T: ['Şehri dar gelen', 'Senin şehrin sana az seçenek bırakıyor. Önemli şeyler için başka şehirlere gitmen gerekiyor: bir uzman hekim, bir konser, bir iş görüşmesi. Her gidiş bir gün, bir yol parası, bazen bir izin demek. Bedeli şu: Seçeneğin uzakta olması, onun fiilen yok olmasına yakındır. Zamanla insan istemeyi de bırakır.', 'Kaç gerçek seçenek'],
+      Y: ['Kendi yolunu açan', 'Şehir sana hazır bir menü sunmuyor, ama sen kendi seçeneğini yaratıyorsun: bir dernek, bir dayanışma, bir girişim. Bu, büyüyen şehirlerin en az görünen sermayesi. Bedeli şu: Bu yolu herkes açamaz. Senin zamanın, enerjin ve bağların, başkalarının seçeneği hâline gelir. Yorulduğunda yerini dolduracak bir yapı yoksa o seçenek de kaybolur.', 'Kaç gerçek seçenek']
     }
   };
 
@@ -150,7 +151,7 @@
       Y: ['Yakın bağlarla taşınan', 'Seni ailen ve komşuların taşıyor. Zor bir günde yalnız kalmazsın. Bu, şehirde en güçlü güvencelerden biri. Bedeli şu: Yakın bağlar sıcaktır ama dardır. Sosyolog Mark Granovetter’in klasik çalışmasına göre yeni iş ve fırsat haberleri çoğu zaman en yakınlarımızdan değil, daha uzak tanıdıklarımızdan gelir. Mahallen değişirse ya da sen taşınırsan bu güvence kolay taşınmaz.', 'Yakın, köprü ve kurumsal bağlar'],
       K: ['Köprü kuran', 'Senin gücün farklı çevreleri birbirine bağlayabilmen. Selamlaştığın esnaf, başka mahalledeki arkadaş, bir derneğin üyesi. Granovetter bu tür bağlara “zayıf bağların gücü” der: Yeni bilgi ve fırsat en çok bu köprülerden geçer. Bedeli şu: Köprüler geniştir ama ince. Gerçekten zor bir günde seni taşıyacak kadar güçlü olmayabilirler.', 'Yakın, köprü ve kurumsal bağlar'],
       R: ['Kurumlara yaslanan', 'Sen işini kurumlar aracılığıyla görüyorsun: muhtar, belediye, eczane, site yönetimi. Bu düzenli ve güvenilir bir yol. Bedeli şu: Kurumsal bağ, kurum ne kadar yakınsa o kadar işe yarar. Kitaba göre şehir büyüdükçe bir hanenin çocukları başka bir okula, yaşlıları başka bir sağlık ocağına bağlanır. Kurum uzaklaşınca bu bağ da incelir.', 'Yakın, köprü ve kurumsal bağlar'],
-      I: ['İnce bağlı', 'Sen işlerini çoğunlukla tek başına görüyorsun. Bu bir tercih de olabilir, şehrin sana bıraktığı bir durum da. Kitap kira, uzayan yollar ve bakım yükü üst üste bindiğinde bir hayatın tek bir kırılgan çizgiye sıkışabileceğini anlatır. Bedeli şu: Her şey yolundayken bağımsızlık gibi görünen şey, zor bir günde yalnızlığa dönüşebilir. Bir komşuyla selamlaşmak bile bir başlangıçtır.', 'Yakın, köprü ve kurumsal bağlar']
+      I: ['İnce bağlı', 'Sen işlerini çoğunlukla tek başına görüyorsun. Bu bir tercih de olabilir, şehrin sana bıraktığı bir durum da. Thoreau’nun birinci sandalyesi, yani yalnızlık, senin en çok kullandığın sandalye. Bedeli şu: Her şey yolundayken bağımsızlık gibi görünen şey, zor bir günde yalnızlığa dönüşebilir. Bir komşuyla selamlaşmak bile bir başlangıçtır.', 'Yakın, köprü ve kurumsal bağlar']
     }
   };
 

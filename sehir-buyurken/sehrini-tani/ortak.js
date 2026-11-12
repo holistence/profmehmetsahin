@@ -4,9 +4,9 @@
   var SITE = 'https://profmehmetsahin.com', KOK = '/sehir-buyurken/sehrini-tani/';
   var LISTE = [
     { slug: 'hayat-evresi', tur: 'test', ad: 'Şehrinde hangi hayat evresindesin?', kisa: 'Aynı şehir aynı anda öğrenciyi, genç aileyi, yorgun yetişkini ve yaşlıyı taşır. Sen hangisisin?', sure: '6 soru' },
-    { slug: 'sokagin-degisti', tur: 'test', ad: 'Sokağın ne kadar değişti?', kisa: 'Binalar yerinde duruyor. Peki sokağının temposu, sesi ve insanları?', sure: '6 soru' },
+    { slug: 'evin-nerede', tur: 'test', ad: 'Şehirde evini nerede kurardın?', kisa: 'Merkezde küçük bir ev mi, kıyıda geniş bir site mi, tanıdık mahalle mi? Kira, mesafe ve aidiyet arasında seç.', sure: '6 soru' },
     { slug: 'yerli-mi-gelen-mi', tur: 'test', ad: 'Bu şehrin neresindesin?', kisa: 'Yerli, yeni gelen, dönen ya da yolcu. Şehrinle bağın hangi hikâyeden?', sure: '6 soru' },
-    { slug: 'zamanin-nereye', tur: 'test', ad: 'Şehirde zamanın nereye gidiyor?', kisa: 'Yolda, durakta, kuyrukta ya da direksiyonda. Günün hangi parçası şehre gidiyor?', sure: '6 soru' },
+    { slug: 'secenekler', tur: 'test', ad: 'Şehrin sana kaç seçenek bırakıyor?', kisa: 'Konser, doktor, iş, hafta sonu. Şehrin sahip oldukları ile senin gerçekten yapabildiklerin arasındaki mesafe.', sure: '6 soru' },
     { slug: 'mahallen-tasiyor-mu', tur: 'test', ad: 'Mahallen seni taşıyor mu?', kisa: 'Zor bir günde kime dayanırsın? Yakın, köprü ve kurumsal bağlarını tart.', sure: '6 soru' },
     { slug: 'tahmin', tur: 'oyun', ad: 'İlini tahmin et: 6 rakam', kisa: 'İlini seç, nüfusunu, yaşlanmasını, göçünü ve hanelerini tahmin et. TÜİK verisiyle karşılaştır.', sure: '3 dk' },
     { slug: 'kac-dakika', tur: 'oyun', ad: 'Senin şehrin kaç dakika?', kisa: 'Eczane, okul, market, durak. Yürüyerek kaç dakikadalar ve 80 yaşında biri için bu ne demek?', sure: '2 dk' },
@@ -27,8 +27,8 @@
 
   // ---- ilerleme (yalnızca bu tarayıcıda) ----
   var AN = 'sehriniTani';
-  function kayitlar() { try { return JSON.parse(localStorage.getItem(AN)) || {}; } catch (e) { return {}; } }
-  function kaydet(slug, ozet) { var r = kayitlar(); r[slug] = { o: ozet, t: Date.now() }; try { localStorage.setItem(AN, JSON.stringify(r)); } catch (e) {} }
+  function kayitlar() { var r = {}, g = {}; try { g = JSON.parse(localStorage.getItem(AN)) || {}; } catch (e) {} LISTE.forEach(function (o) { if (g[o.slug]) r[o.slug] = g[o.slug]; }); return r; }
+  function kaydet(slug, ozet) { var r = {}; try { r = JSON.parse(localStorage.getItem(AN)) || {}; } catch (e) {} r[slug] = { o: ozet, t: Date.now() }; try { localStorage.setItem(AN, JSON.stringify(r)); } catch (e) {} }
 
   // ---- liste kartları ----
   function ogeHTML(o) {

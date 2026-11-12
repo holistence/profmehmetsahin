@@ -81,7 +81,7 @@
     kok.innerHTML = '<div class="kart sonuc"><p class="adim">' + esc(il.il) + ' için sonucun</p><div class="puan">' + top + ' <span class="kucuk">/ 600</span></div><h2>' + u + '</h2>' + haritaSVG() +
       '<table class="tablo"><tr><th>Gösterge</th><th class="s">Tahmin</th><th class="s">Gerçek</th><th class="s">Puan</th></tr>' +
       SORULAR.map(function (q, k) { return '<tr><td>' + esc(q.s.replace(/\?.*$/, '?')) + '</td><td class="s">' + q.fmt(tahminler[k]) + '</td><td class="s"><b>' + q.fmt(il[q.k]) + '</b></td><td class="s">' + puanlar[k] + '</td></tr>'; }).join('') + '</table>' +
-      '<p class="kitapta">Kitaptan: Bir şehri yalnızca binaları, yolları ve sınırları değiştirmez. Onu yaşayanların yaşı, kimlerle aynı çatıyı paylaştıkları, nerede doğdukları, ne zaman gelip ne zaman gittikleri ve geleceklerini nerede tasarladıkları da şehrin gündelik nabzını yeniden ayarlar.</p>' +
+      '<p class="kitapta">Kitaptan: Kentin nüfusu artarken yalnızca toplam büyümedi; o toplamın içindeki insanların bileşimi de başkalaştı.</p>' +
       '<div id="sonucPaylas"></div><div class="dugmeler"><button class="btn ghost" id="yeniden">Başka bir il dene</button><a class="btn terra" href="' + ST.KITAP + '" target="_blank" rel="noopener">Kitabı Kitapyurdu’ndan al</a></div>' +
       '<p class="kucuk">Kaynak: TÜİK ADNKS (nüfus 2015, 2025; hane 2025; 65+ payı 2024) ve TÜİK İç Göç İstatistikleri 2025. Harita: alpers/Turkey-Maps-GeoJSON (Apache-2.0).</p></div>';
     ST.paylas($('#sonucPaylas'), { url: ST.url('tahmin'), mesaj: 'Şehrimi ne kadar tanıyorum? ' + il.il + ' için 600 üzerinden ' + top + ' aldım: “' + u + '”. Sen kendi ilini dene:',
