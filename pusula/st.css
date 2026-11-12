@@ -119,3 +119,5 @@ input[type=range]{width:100%;accent-color:var(--terra)}
 .harita path.ilce.dogru{fill:var(--ok)} .harita path.ilce.yanlis{fill:#b3443a}
 .harita text{font:600 24px var(--f-body);fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--surface);stroke-width:4px}
 .kartcik{font-family:var(--f-display);font-size:1.5rem;line-height:1.25;padding:26px 18px;border:1px dashed var(--line);border-radius:12px;text-align:center;margin:8px 0 14px}
+.harita circle.hedef{fill:transparent;stroke:var(--muted);stroke-width:2;stroke-dasharray:5 5;cursor:pointer}
+.harita circle.hedef:hover{stroke:var(--terra)}

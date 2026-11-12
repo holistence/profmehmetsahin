@@ -29,6 +29,15 @@
     if (i >= S.length) return bitir();
     var q = S[i];
     kok.innerHTML = '<div class="kart"><div class="ilerleme">' + S.map(function (_, k) { return '<i' + (k <= i ? ' class="on"' : '') + '></i>'; }).join('') + '</div><p class="adim">Soru ' + (i + 1) + ' / ' + S.length + '</p><p class="soru">' + esc(q.s) + '</p><p class="kucuk">Haritada ilçeye dokun.</p>' + harita(false) + '<div id="geri"></div></div>';
+    // küçük ilçelere (Bozcaada gibi) dokunulabilir bir halka ekle
+    var svg = kok.querySelector('.harita svg'), NS = 'http://www.w3.org/2000/svg';
+    kok.querySelectorAll('path.ilce').forEach(function (p) {
+      var b = p.getBBox(); if (b.width > 100 || b.height > 100) return;
+      var c = document.createElementNS(NS, 'circle'), x = IL[+p.dataset.k];
+      c.setAttribute('cx', b.x + b.width / 2); c.setAttribute('cy', b.y + b.height / 2); c.setAttribute('r', 48);
+      c.setAttribute('class', 'hedef'); c.setAttribute('data-k', p.dataset.k);
+      c.onclick = function () { p.onclick(); }; svg.appendChild(c);
+    });
     kok.querySelectorAll('path.ilce').forEach(function (p) {
       p.onclick = function () {
         var x = IL[+p.dataset.k], ok = x.ad === q.c.ad; if (ok) puan++;
