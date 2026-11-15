@@ -150,8 +150,8 @@ a.wk:hover{background:var(--strait);color:var(--bg)}
 .copyrow code{font-family:var(--f-mono);background:var(--surface);border:1px solid var(--line);padding:6px 10px;border-radius:6px;user-select:all}
 .btn{font-size:.85rem;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:6px;cursor:pointer}
 
-.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;align-self:flex-start}
-.lang button{border:0;background:transparent;font:inherit;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.06em;padding:5px 12px;cursor:pointer;color:var(--muted)}
+.lang{display:inline-flex;position:fixed;top:14px;right:16px;z-index:60;border:2px solid var(--strait);border-radius:999px;overflow:hidden;background:var(--surface);box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.lang button{border:0;background:transparent;font:inherit;font-family:var(--f-mono);font-size:1rem;font-weight:700;letter-spacing:.06em;padding:8px 18px;cursor:pointer;color:var(--ink)}
 .lang button[aria-pressed="true"]{background:var(--strait);color:var(--bg)}
 .ids{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:6px}
 .ids a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--ink);font-family:var(--f-mono);font-size:.9rem;min-width:0}
@@ -207,7 +207,7 @@ a.book-link{text-decoration:none;color:var(--ink)}
 <body>
 <div class="shell">
   <aside class="side">
-    <div class="lang" role="group" aria-label="Dil / Language"><button type="button" data-lang="tr" aria-pressed="true">TR</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    <div class="lang" role="group" aria-label="Dil / Language"><button type="button" data-lang="tr" aria-pressed="true">TR</button><button type="button" data-lang="en" aria-pressed="false">EN · English</button></div>
     <div class="who">
       <div class="title">Prof. Dr.</div>
       <h1>Prof. Dr. Mehmet Şahin</h1>
