@@ -200,6 +200,7 @@ a.book-link{text-decoration:none;color:var(--ink)}
   .year>.y{position:static}
   .row{grid-template-columns:minmax(0,1fr);gap:2px}
 }
+.talk-dl{display:inline-block;padding:10px 20px;border:2px solid var(--strait);border-radius:999px;font-weight:600;text-decoration:none}
 @media (max-width:900px){.lang{top:auto;bottom:16px;right:16px}}
 @media (prefers-reduced-motion:no-preference){.view{animation:in .4s ease-out}@keyframes in{from{transform:translateY(8px)}to{transform:none}}}
 </style>
@@ -265,6 +266,13 @@ a.book-link{text-decoration:none;color:var(--ink)}
           <button type="button" class="cover-btn" data-book="kavusamayanlar" aria-haspopup="dialog" aria-label="Kavuşamayanlar"><img src="img/kavusamayanlar.webp" width="540" height="840" alt="" loading="lazy"></button>
         </div>
         <p class="buylinks"><span data-en="On sale at Kitapyurdu:">Kitapyurdu’nda satışta:</span> <a href="https://www.kitapyurdu.com/kitap/askonomi-kalbin-kararlarinin-ekonomisi/774343.html" target="_blank" rel="noopener">Aşkonomi</a> · <a href="https://www.kitapyurdu.com/kitap/canakkalenin-pusulasi-bugunu-anlamak-degisimi-izlemek-gelecegi-dusunmek/774341.html" target="_blank" rel="noopener">Çanakkale’nin Pusulası</a> · <a href="https://www.kitapyurdu.com/kitap/sehir-buyurken-canakkalede-buyuyen-kent-ve-gundelik-hayat/774348.html" target="_blank" rel="noopener">Şehir Büyürken</a> · <a href="https://www.kitapyurdu.com/kitap/kavusamayanlar/774347.html" target="_blank" rel="noopener">Kavuşamayanlar</a></p>
+      </section>
+
+      <section class="talk">
+        <p class="eyebrow" data-en="Erasmus+ teaching · Ovidius University, Constanța · November 2026">Erasmus+ ders verme · Ovidius Üniversitesi, Köstence · Kasım 2026</p>
+        <h2 data-en="Who Counts? Computers, welfare and our rights">Kim Sayılır? Bilgisayarlar, sosyal yardım ve haklarımız</h2>
+        <p class="lead" data-en="Lecture slides with videos and speaker notes (PowerPoint, about 20 MB).">Videolu ve konuşmacı notlu ders sunumu (PowerPoint, yaklaşık 20 MB).</p>
+        <p style="margin-top:14px"><a class="talk-dl" href="sunum/kim-sayilir-ovidius-2026.pptx" data-en-href="sunum/who-counts-ovidius-2026.pptx" download data-en="Download the slides (English) ↓">Sunumu indir (Türkçe) ↓</a></p>
       </section>
 
       <section>
@@ -634,6 +642,7 @@ function setLang(l){
   L=l==="en"?"en":"tr";
   document.documentElement.lang=L;document.title=T().title;
   document.querySelectorAll("[data-en]").forEach(el=>{if(el.dataset.tr===undefined)el.dataset.tr=el.innerHTML;el.innerHTML=L==="en"?el.dataset.en:el.dataset.tr;});
+  document.querySelectorAll("[data-en-href]").forEach(el=>{if(el.dataset.trHref===undefined)el.dataset.trHref=el.getAttribute("href");el.setAttribute("href",L==="en"?el.dataset.enHref:el.dataset.trHref);});
   document.querySelectorAll("[data-en-ph]").forEach(el=>{if(el.dataset.trPh===undefined)el.dataset.trPh=el.placeholder;el.placeholder=L==="en"?el.dataset.enPh:el.dataset.trPh;});
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===L));
   wi=0;renderFilters();renderPubs();renderStatic();
