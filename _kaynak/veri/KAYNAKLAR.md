@@ -9,11 +9,10 @@ ilgili aracın `veri.js` dosyasına konur.
 
 | Araç | Kapsam | Değişkenler | Kaynak |
 |---|---|---|---|
-| İlin karnesi | 81 il, 2016–2024 | nüfus, vergi tahsilatı, merkezi yönetim faiz dışı harcama, cari GSYH | HMB Muhasebat Genel Müdürlüğü, GİB, TÜİK |
-| Belediyen ne harcıyor? | 81 il, 2007–2025 | yerel yönetim harcama kalemleri, gelir, denge (kişi başına, 2025 fiyatlarıyla) | HMB yerel yönetim bütçe istatistikleri, TÜİK ADNKS |
+| İlin karnesi | 81 il, 2016–2024 | nüfus, vergi tahsilatı, merkezi yönetim faiz dışı harcama | HMB Muhasebat Genel Müdürlüğü, GİB, TÜİK |
+| Yerel yönetimler ne harcıyor? | 81 il, 2007–2025 | yerel yönetim harcama kalemleri, gelir, denge (kişi başına, 2025 fiyatlarıyla) | HMB yerel yönetim bütçe istatistikleri, TÜİK ADNKS |
 | İlin kaç yılda ne kadar değişti? | 81 il, 2000–2025 | reel GSYH endeksi, kişi başına reel gelir, nüfus, hekim, yatak, elektrik, yaşlı payı, hane büyüklüğü, yükseköğretim, otomobil | TÜİK, Sağlık Bakanlığı |
 
 Hesaplama notları:
 - Karnede harcama, illere göre kaydedilen merkezi yönetim harcamasından faiz çıkarılarak alınır.
   İllere dağıtılmayan harcamalar kapsam dışıdır; bu yüzden oranlar Türkiye ortalamasına (=1) göre verilir.
-- "Üretim payına oranla vergi" = (ilin vergi payı) / (ilin cari GSYH payı).

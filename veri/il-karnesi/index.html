@@ -23,7 +23,7 @@
 <main>
   <header>
     <h1>İlin karnesi</h1>
-    <p class="lead">İlin merkezi bütçeye ne veriyor, karşılığında ne alıyor? Ve bu rakam ne kadar gerçeği yansıtıyor?</p>
+    <p class="lead">İlin merkezi bütçeye ne veriyor, karşılığında ne alıyor?</p>
   </header>
   <div class="pick">
     <label for="il">İl <select id="il"></select></label>
@@ -36,8 +36,7 @@
     <div class="facts">
       <div class="fact fa"><b id="g1"></b><span>kişi başına vergi tahsilatı</span><em id="s1"></em></div>
       <div class="fact fb"><b id="g2"></b><span>kişi başına merkezi harcama (faiz hariç)</span><em id="s2"></em></div>
-      <div class="fact"><b id="g3"></b><span>vergisine oranla aldığı harcama, Türkiye ortalaması 1 iken</span><em id="s3"></em></div>
-      <div class="fact"><b id="g4"></b><span>üretimdeki payına oranla vergi tahsilatı, Türkiye ortalaması 1 iken</span><em id="s4"></em></div>
+      <div class="fact" style="grid-column:1/-1"><b id="g3"></b><span>vergisine oranla aldığı harcama, Türkiye ortalaması 1 iken</span><em id="s3"></em></div>
     </div>
     <p class="note" id="okuma"></p>
   </section>
@@ -53,14 +52,14 @@
   </section>
   <section class="card">
     <h2>Yıllara göre seyir</h2>
-    <div class="scroll"><svg id="seyir" width="100%" role="img" aria-label="Yıllara göre iki oranın seyri"></svg></div>
-    <div class="legend"><span style="--k:var(--b)">vergisine oranla aldığı harcama</span><span style="--k:var(--a)">üretim payına oranla vergi</span><span>kesik çizgi: Türkiye ortalaması (1)</span></div>
+    <div class="scroll"><svg id="seyir" width="100%" role="img" aria-label="Vergisine oranla aldığı harcamanın yıllara göre seyri"></svg></div>
+    <div class="legend"><span style="--k:var(--b)">vergisine oranla aldığı harcama</span><span>kesik çizgi: Türkiye ortalaması (1)</span></div>
   </section>
   <div class="actions"><button type="button" id="kopyala">Sonucu kopyala</button><span class="note" id="kopya" aria-live="polite"></span></div>
   <footer>
-    <span>Dikkat: verginin tahsil edildiği il, vergiyi ödeyenin yaşadığı il olmayabilir. Şirket merkezleri, gümrük kapıları ve rafineriler tahsilatı birkaç ilde toplar. Dördüncü gösterge bu etkiyi gösterir: 1'in çok üstündeki iller, ürettiklerinden fazlasını tahsil etmiş görünür.</span>
+    <span>Dikkat: verginin tahsil edildiği il, vergiyi ödeyenin yaşadığı il olmayabilir. Şirket merkezleri, gümrük kapıları ve rafineriler tahsilatı birkaç ilde toplar. Bu yüzden büyük şirket merkezi ya da gümrüğü olan illerde vergi olduğundan yüksek, diğerlerinde düşük görünebilir.</span>
     <span>Harcama, merkezi yönetimin illere göre kaydedilen faiz dışı harcamasıdır; bütçenin illere dağıtılmayan kısmını içermez. Bu yüzden oranlar Türkiye ortalamasına göre verilmiştir.</span>
-    <span>Kaynak: Hazine ve Maliye Bakanlığı Muhasebat Genel Müdürlüğü ve Gelir İdaresi Başkanlığı il verileri, TÜİK il bazında GSYH ve ADNKS.</span>
+    <span>Kaynak: Hazine ve Maliye Bakanlığı Muhasebat Genel Müdürlüğü ve Gelir İdaresi Başkanlığı il verileri, TÜİK ADNKS.</span>
   </footer>
 </main>
 </div>

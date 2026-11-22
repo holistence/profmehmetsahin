@@ -17,7 +17,7 @@ kodlar = sorted(adlar, key=lambda k: adlar[k])
 
 # A) karnesi
 tag = list(wb["TAG_PANEL"].iter_rows(values_only=True)); h = tag[0]
-ix = {n: h.index(n) for n in ["İl Kodu", "Yıl", "Nüfus", "Vergi Tahsilatı (TL)", "Toplam GSYH (TL)"]}
+ix = {n: h.index(n) for n in ["İl Kodu", "Yıl", "Nüfus", "Vergi Tahsilatı (TL)"]}
 T = {(int(r[ix["İl Kodu"]]), int(r[ix["Yıl"]])): r for r in tag[1:] if r[ix["İl Kodu"]] is not None}
 yA = list(range(2016, 2025)); A = {"yillar": yA, "d": {}}
 for k in kodlar:
@@ -25,8 +25,8 @@ for k in kodlar:
     for y in yA:
         r = T[(k, y)]
         top, faiz = al(k, y, "EQ__central_total_nominal_thousand_tl"), al(k, y, "EQ__central_interest_nominal_thousand_tl") or 0
-        seri.append([int(r[ix["Nüfus"]]), round(float(r[ix["Vergi Tahsilatı (TL)"]]) / 1e6, 2), round((top - faiz) / 1e3, 2), round(float(r[ix["Toplam GSYH (TL)"]]) / 1e6, 1)])
-    A["d"][adlar[k]] = seri   # nufus, vergi (milyon TL), faiz disi harcama (milyon TL), GSYH (milyon TL)
+        seri.append([int(r[ix["Nüfus"]]), round(float(r[ix["Vergi Tahsilatı (TL)"]]) / 1e6, 2), round((top - faiz) / 1e3, 2)])
+    A["d"][adlar[k]] = seri   # nufus, vergi (milyon TL), faiz disi harcama (milyon TL)
 
 # B) yerel yonetim
 yB = list(range(2007, 2026)); B = {"yillar": yB, "d": {}, "grup": {}}
