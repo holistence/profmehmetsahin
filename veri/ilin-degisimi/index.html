@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İlin Kaç Yılda Ne Kadar Değişti? · Prof. Dr. Mehmet Şahin</title>
+<meta name="description" content="Seçtiğin yıldan bugüne ilinde ekonomi, nüfus ve sağlık nasıl değişti? 81 il, 2000–2025.">
+<link rel="canonical" href="https://profmehmetsahin.com/veri/ilin-degisimi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="İlin Kaç Yılda Ne Kadar Değişti?">
+<meta property="og:description" content="Seçtiğin yıldan bugüne ilinde ekonomi, nüfus ve sağlık nasıl değişti? 81 il, 2000–2025.">
+<meta property="og:url" content="https://profmehmetsahin.com/veri/ilin-degisimi/">
+<meta property="og:image" content="https://profmehmetsahin.com/img/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../veri/veri.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="../">← Veri Araçları</a><nav aria-label="Bölüm"><a href="/">Ana sayfa</a></nav></header>
+<main>
+  <header>
+    <h1>İlin kaç yılda ne kadar değişti?</h1>
+    <p class="lead">İlini ve bir başlangıç yılı seç: doğduğun, okula başladığın ya da şehre taşındığın yıl. O günden bugüne neyin değiştiğini gör.</p>
+  </header>
+  <div class="pick">
+    <label for="il">İl <select id="il"></select></label>
+    <label for="bas">Başlangıç yılı <select id="bas"></select></label>
+  </div>
+  <section class="card">
+    <div class="tag" id="etiket"></div>
+    <p class="verdict" id="hukum"></p>
+    <p class="note" id="hukum-not"></p>
+  </section>
+  <div class="grid2" id="kartlar"></div>
+  <div class="actions"><button type="button" id="kopyala">Sonucu kopyala</button><span class="note" id="kopya" aria-live="polite"></span></div>
+  <footer>
+    <span>Her göstergenin verisi farklı yılda başlar. Seçtiğin yılda veri yoksa kart, verinin başladığı ilk yılı kullanır ve o yılı gösterir.</span>
+    <span>Ekonomi ve gelir enflasyondan arındırılmış (zincirlenmiş hacim) değerlerdir.</span>
+    <span>Kaynak: TÜİK il bazında GSYH, ADNKS ve il göstergeleri; Sağlık Bakanlığı sağlık istatistikleri.</span>
+  </footer>
+</main>
+</div>
+<script src="veri.js"></script>
+<script src="../ortak.js"></script>
+<script src="sayfa.js"></script>
+</body>
+</html>

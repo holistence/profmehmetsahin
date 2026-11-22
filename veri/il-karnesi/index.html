@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İlin Karnesi · Prof. Dr. Mehmet Şahin</title>
+<meta name="description" content="İlin merkezi bütçeye ne veriyor, karşılığında ne alıyor? 81 il, 2016–2024.">
+<link rel="canonical" href="https://profmehmetsahin.com/veri/il-karnesi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="İlin Karnesi">
+<meta property="og:description" content="İlin merkezi bütçeye ne veriyor, karşılığında ne alıyor? 81 il, 2016–2024.">
+<meta property="og:url" content="https://profmehmetsahin.com/veri/il-karnesi/">
+<meta property="og:image" content="https://profmehmetsahin.com/img/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../veri/veri.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="../">← Veri Araçları</a><nav aria-label="Bölüm"><a href="/">Ana sayfa</a></nav></header>
+<main>
+  <header>
+    <h1>İlin karnesi</h1>
+    <p class="lead">İlin merkezi bütçeye ne veriyor, karşılığında ne alıyor? Ve bu rakam ne kadar gerçeği yansıtıyor?</p>
+  </header>
+  <div class="pick">
+    <label for="il">İl <select id="il"></select></label>
+    <label for="yil">Yıl <select id="yil"></select></label>
+    <label for="kiyas">Karşılaştır <select id="kiyas"></select></label>
+  </div>
+  <section class="card">
+    <div class="tag" id="etiket"></div>
+    <p class="verdict" id="hukum"></p>
+    <div class="facts">
+      <div class="fact fa"><b id="g1"></b><span>kişi başına vergi tahsilatı</span><em id="s1"></em></div>
+      <div class="fact fb"><b id="g2"></b><span>kişi başına merkezi harcama (faiz hariç)</span><em id="s2"></em></div>
+      <div class="fact"><b id="g3"></b><span>vergisine oranla aldığı harcama, Türkiye ortalaması 1 iken</span><em id="s3"></em></div>
+      <div class="fact"><b id="g4"></b><span>üretimdeki payına oranla vergi tahsilatı, Türkiye ortalaması 1 iken</span><em id="s4"></em></div>
+    </div>
+    <p class="note" id="okuma"></p>
+  </section>
+  <section class="card">
+    <h2>81 il içinde yeri</h2>
+    <div class="strip" id="serit" role="img" aria-label="İllerin vergisine oranla aldığı harcamaya göre sıralaması"></div>
+    <div class="legend"><span style="--k:var(--b)" id="l1"></span><span style="--k:var(--a)" id="l2" hidden></span><span>diğer iller</span></div>
+    <p class="note">Soldan sağa: vergisine oranla en az harcama alan ilden en çok alana. Çubuk yüksekliği logaritmik ölçeklidir.</p>
+  </section>
+  <section class="card" id="kiyas-kart" hidden>
+    <h2 id="kiyas-baslik"></h2>
+    <div class="scroll"><table id="kiyas-tablo"></table></div>
+  </section>
+  <section class="card">
+    <h2>Yıllara göre seyir</h2>
+    <div class="scroll"><svg id="seyir" width="100%" role="img" aria-label="Yıllara göre iki oranın seyri"></svg></div>
+    <div class="legend"><span style="--k:var(--b)">vergisine oranla aldığı harcama</span><span style="--k:var(--a)">üretim payına oranla vergi</span><span>kesik çizgi: Türkiye ortalaması (1)</span></div>
+  </section>
+  <div class="actions"><button type="button" id="kopyala">Sonucu kopyala</button><span class="note" id="kopya" aria-live="polite"></span></div>
+  <footer>
+    <span>Dikkat: verginin tahsil edildiği il, vergiyi ödeyenin yaşadığı il olmayabilir. Şirket merkezleri, gümrük kapıları ve rafineriler tahsilatı birkaç ilde toplar. Dördüncü gösterge bu etkiyi gösterir: 1'in çok üstündeki iller, ürettiklerinden fazlasını tahsil etmiş görünür.</span>
+    <span>Harcama, merkezi yönetimin illere göre kaydedilen faiz dışı harcamasıdır; bütçenin illere dağıtılmayan kısmını içermez. Bu yüzden oranlar Türkiye ortalamasına göre verilmiştir.</span>
+    <span>Kaynak: Hazine ve Maliye Bakanlığı Muhasebat Genel Müdürlüğü ve Gelir İdaresi Başkanlığı il verileri, TÜİK il bazında GSYH ve ADNKS.</span>
+  </footer>
+</main>
+</div>
+<script src="veri.js"></script>
+<script src="../ortak.js"></script>
+<script src="sayfa.js"></script>
+</body>
+</html>
