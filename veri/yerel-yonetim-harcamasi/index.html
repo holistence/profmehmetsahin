@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yerel Yönetimler Ne Harcıyor? · Prof. Dr. Mehmet Şahin</title>
+<meta name="description" content="İlindeki yerel yönetimler kişi başına ne harcıyor, parayı nereye veriyor? 81 il, 2007–2025.">
+<link rel="canonical" href="https://profmehmetsahin.com/veri/yerel-yonetim-harcamasi/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yerel Yönetimler Ne Harcıyor?">
+<meta property="og:description" content="İlindeki yerel yönetimler kişi başına ne harcıyor, parayı nereye veriyor? 81 il, 2007–2025.">
+<meta property="og:url" content="https://profmehmetsahin.com/veri/yerel-yonetim-harcamasi/">
+<meta property="og:image" content="https://profmehmetsahin.com/img/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../veri/veri.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="../">← Veri Araçları</a><nav aria-label="Bölüm"><a href="/">Ana sayfa</a></nav></header>
+<main>
+  <header>
+    <h1>Yerel yönetimler ne harcıyor?</h1>
+    <p class="lead">İlindeki yerel yönetimler kişi başına ne kadar harcıyor, parayı nereye veriyor, komşu ile göre nerede duruyor?</p>
+  </header>
+  <div class="pick">
+    <label for="il">İl <select id="il"></select></label>
+    <label for="yil">Yıl <select id="yil"></select></label>
+    <label for="kiyas">Karşılaştır <select id="kiyas"></select></label>
+  </div>
+  <section class="card">
+    <div><span class="tag" id="etiket"></span> <span class="chip" id="grup"></span></div>
+    <p class="verdict" id="hukum"></p>
+    <div class="facts">
+      <div class="fact fb"><b id="g1"></b><span>kişi başına harcama</span><em id="s1"></em></div>
+      <div class="fact fa"><b id="g2"></b><span>kişi başına gelir</span><em id="s2"></em></div>
+      <div class="fact"><b id="g3"></b><span id="g3a"></span><em id="s3"></em></div>
+      <div class="fact"><b id="g4"></b><span>harcamanın yatırıma giden payı</span><em id="s4"></em></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Para nereye gidiyor?</h2>
+    <div class="stack" id="yigin" role="img" aria-label="Harcamanın kalemlere dağılımı"></div>
+    <div class="legend" id="yigin-l"></div>
+  </section>
+  <section class="card" id="kiyas-kart" hidden>
+    <h2 id="kiyas-baslik"></h2>
+    <div class="scroll"><table id="kiyas-tablo"></table></div>
+  </section>
+  <section class="card">
+    <h2>Yıllara göre kişi başına harcama</h2>
+    <div class="scroll"><svg id="seyir" width="100%" role="img" aria-label="Yıllara göre kişi başına harcama"></svg></div>
+    <div class="legend"><span style="--k:var(--b)" id="l1"></span><span style="--k:var(--a)" id="l2" hidden></span><span style="--k:var(--muted)">81 ilin ortancası (kesik)</span></div>
+    <p class="note" id="seyir-not"></p>
+  </section>
+  <div class="actions"><button type="button" id="kopyala">Sonucu kopyala</button><span class="note" id="kopya" aria-live="polite"></span></div>
+  <footer>
+    <span>Tüm tutarlar 2025 yılı ortalama fiyatlarıyla, yani enflasyondan arındırılmış olarak verilmiştir. İl rakamı, o ildeki yerel yönetimlerin toplamıdır; tek bir belediyeyi göstermez.</span>
+    <span>Kaynak: Hazine ve Maliye Bakanlığı yerel yönetim bütçe istatistikleri, TÜİK ADNKS.</span>
+  </footer>
+</main>
+</div>
+<script src="veri.js"></script>
+<script src="../ortak.js"></script>
+<script src="sayfa.js"></script>
+</body>
+</html>
