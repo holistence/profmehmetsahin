@@ -16,3 +16,7 @@ ilgili aracın `veri.js` dosyasına konur.
 Hesaplama notları:
 - Karnede harcama, illere göre kaydedilen merkezi yönetim harcamasından faiz çıkarılarak alınır.
   İllere dağıtılmayan harcamalar kapsam dışıdır; bu yüzden oranlar Türkiye ortalamasına (=1) göre verilir.
+
+## Hâlâ aile evinde
+
+Kaynak: TÜİK, İstatistiklerle Aile 2025, "Cinsiyete göre anne ve/veya babası ile birlikte yaşayan 25-29 yaş grubu hiç evlenmemiş kişi sayısı ve oranı" (ADNKS, 81 il). Tablodaki kişi sayıları `veri/aile-evinde/veri.js` dosyasına aktarılır; cinsiyet oranları her cinsiyetin kendi paydasıyla sayfada hesaplanır.

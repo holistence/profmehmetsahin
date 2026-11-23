@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aile Evinde: 25-29 Yaşındaki Bekârlar · Prof. Dr. Mehmet Şahin</title>
+<meta name="description" content="İlinde 25-29 yaşındaki hiç evlenmemişlerin kaçı anne babasıyla yaşıyor? 81 il, 2025, TÜİK.">
+<link rel="canonical" href="https://profmehmetsahin.com/veri/aile-evinde/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aile Evinde: 25-29 Yaşındaki Bekârlar">
+<meta property="og:description" content="İlinde 25-29 yaşındaki hiç evlenmemişlerin kaçı anne babasıyla yaşıyor? 81 il, 2025, TÜİK.">
+<meta property="og:url" content="https://profmehmetsahin.com/veri/aile-evinde/">
+<meta property="og:image" content="https://profmehmetsahin.com/img/paylasim.jpg">
+<meta property="og:locale" content="tr_TR">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../veri/veri.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="../">← Veri Araçları</a><nav aria-label="Bölüm"><a href="/">Ana sayfa</a></nav></header>
+<main>
+  <header>
+    <p class="tag">81 il · 2025 · TÜİK</p>
+    <h1>Hâlâ aile evinde</h1>
+    <p class="lead">25-29 yaşında, hiç evlenmemiş ve anne babasıyla yaşayanlar. İlini seç, senin yaşıtlarının kaçı aile evinde, bak.</p>
+  </header>
+  <div class="pick">
+    <label for="il">İl <select id="il"></select></label>
+    <label for="cins">Kim <select id="cins"><option value="t">Kadın ve erkek</option><option value="k">Kadınlar</option><option value="e">Erkekler</option></select></label>
+    <label for="kiyas">Karşılaştır <select id="kiyas"></select></label>
+  </div>
+  <section class="card">
+    <div class="tag" id="etiket"></div>
+    <p class="verdict" id="hukum"></p>
+    <div class="facts">
+      <div class="fact fb"><b id="g1"></b><span>ilde aile evinde yaşayanların oranı</span><em id="s1"></em></div>
+      <div class="fact fa"><b id="g2"></b><span>Türkiye geneli</span><em id="s2"></em></div>
+      <div class="fact"><b id="g3"></b><span>ilde hiç evlenmemiş erkeklerde</span><em id="s3"></em></div>
+      <div class="fact"><b id="g4"></b><span>ilde hiç evlenmemiş kadınlarda</span><em id="s4"></em></div>
+    </div>
+    <p class="note" id="okuma"></p>
+  </section>
+  <section class="card">
+    <h2>81 il içinde yeri</h2>
+    <div class="strip" id="serit" role="img" aria-label="İllerin aile evinde yaşayan 25-29 yaş bekâr oranına göre sıralaması"></div>
+    <div class="legend"><span style="--k:var(--b)" id="l1"></span><span style="--k:var(--a)" id="l2" hidden></span><span>diğer iller</span></div>
+    <p class="note">Soldan sağa: oranın en düşük olduğu ilden en yükseğe. <span id="uc-not"></span></p>
+  </section>
+  <section class="card">
+    <h2>En yüksek ve en düşük beş il</h2>
+    <div class="scroll"><table id="liste"></table></div>
+  </section>
+  <div class="actions"><button type="button" id="kopyala">Sonucu kopyala</button><span class="note" id="kopya" aria-live="polite"></span></div>
+  <footer>
+    <span>Oran, o ilde 25-29 yaşındaki hiç evlenmemiş kişiler içinde anne ve/veya babasıyla aynı hanede kayıtlı olanların payıdır. Evli, boşanmış ya da eşi ölmüş olanlar hesapta yoktur; yalnız resmî nikâh dikkate alınır.</span>
+    <span>Kadın ve erkek oranları TÜİK tablosundaki kişi sayılarından, her cinsiyetin kendi içinde hesaplanmıştır. TÜİK bülteninde geçen yüzde 42,6 (erkek) ve yüzde 27,4 (kadın) ise toplamın cinsiyetlere dağılımıdır; "erkeklerin yüzde 42,6'sı" anlamına gelmez.</span>
+    <span>Oranın düşük olduğu illerde başka illerden gelen öğrenci ve görevlilerin payı bir etken olabilir; bu tabloyla ayrıştırılamaz. Kaynak: TÜİK, İstatistiklerle Aile 2025; Adrese Dayalı Nüfus Kayıt Sistemi.</span>
+  </footer>
+</main>
+</div>
+<script src="veri.js"></script>
+<script src="../ortak.js"></script>
+<script src="sayfa.js"></script>
+</body>
+</html>
