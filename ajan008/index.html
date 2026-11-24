@@ -168,7 +168,7 @@ header.top .logo{font-family:'Baloo 2';font-weight:800;font-size:22px;color:var(
 <canvas id="snow"></canvas><canvas id="confetti"></canvas>
 <div class="wrap">
 <header class="top">
-  <div class="logo" onclick="go('home')" role="button" aria-label="Ana sayfa">Ajan 008 ★</div>
+  <div class="logo" onclick="go('home')" role="button" aria-label="Ana sayfa">🏠 Ajan 008</div>
   <button class="pill" id="muteBtn" onclick="toggleMute()" aria-label="Sesi aç veya kapat">🔊</button>
   <button class="pill gold" onclick="go('badge')" aria-label="Yıldızlarım ve Ajan Rozetim">★ <span id="starCount">0</span></button>
 </header>
@@ -292,11 +292,16 @@ header.top .logo{font-family:'Baloo 2';font-weight:800;font-size:22px;color:var(
 
 <!-- BADGE -->
 <section class="view" id="v-badge"><div class="card">
-  <div class="ghead"><b>Ajan Rozetim</b></div>
-  <div class="namein" style="padding-top:14px"><input id="nameIn" maxlength="22" placeholder="Adını yaz, ajan!"><button class="pill gold" onclick="setName()">Kaydet</button></div>
+  <div class="ghead"><button class="pill" onclick="go(lastView==='badge'?'home':lastView)" aria-label="Geri">◀</button><b>Ajan Rozetim</b></div>
+  <div class="namein" style="padding-top:14px"><input id="nameIn" maxlength="22" placeholder="Adını yaz, ajan!" enterkeyhint="done" onkeydown="if(event.key==='Enter')setName()"><button class="pill gold" onclick="setName()">Kaydet</button></div>
+  <div id="nameOk" aria-live="polite" style="text-align:center;font-weight:800;color:#2e8b57;min-height:22px"></div>
   <div class="cert" id="cert"></div>
   <p class="note-small" style="font-size:15px;color:#1d2b53;font-weight:700">Görev bitti, ajan! Şimdi ekranı kapat, gezi defterine yaz ya da ailene raporunu anlat.</p>
   <p class="note-small">Rozetini saklamak için ekran görüntüsü alabilirsin.</p>
+  <div style="display:flex;gap:10px;justify-content:center;padding:6px 16px 20px;flex-wrap:wrap">
+    <button class="pill" style="background:var(--navy);color:#fff" onclick="go('games')">🎮 Oyunlara dön</button>
+    <button class="pill gold" onclick="go('home')">🏠 Ana sayfa</button>
+  </div>
 </div></section>
 </div>
 
@@ -319,7 +324,8 @@ function updateCount(){ document.getElementById('starCount').textContent = total
 function award(game, n){ if(n>(S.games[game]||0)){ S.games[game]=n; save(); } }
 
 // ---------- views ----------
-function go(v){ stopTTS(); document.querySelectorAll('.view').forEach(x=>x.classList.remove('on')); document.getElementById('v-'+v).classList.add('on'); window.scrollTo({top:0,behavior:'smooth'}); if(v==='badge') drawCert(); }
+let curView='home', lastView='home';
+function go(v){ if(v==='badge' && curView!=='badge') lastView=curView; curView=v; stopTTS(); document.querySelectorAll('.view').forEach(x=>x.classList.remove('on')); document.getElementById('v-'+v).classList.add('on'); window.scrollTo({top:0,behavior:'smooth'}); if(v==='badge') drawCert(); }
 
 // ---------- reader ----------
 let cur = 0, fsz = 19;
@@ -586,7 +592,8 @@ document.getElementById('dictBox').innerHTML=WORDS.map((w,i)=>`<div style="displ
 function sayEn(i){ if(!('speechSynthesis' in window)) return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(WORDS[i][0]); u.lang='en-US'; const v=speechSynthesis.getVoices().find(x=>/^en/i.test(x.lang)); if(v) u.voice=v; u.rate=.85; speechSynthesis.speak(u); }
 
 // ---------- badge ----------
-function setName(){ S.name=document.getElementById('nameIn').value.trim(); save(); drawCert(); }
+function setName(){ const i=document.getElementById('nameIn'); S.name=i.value.trim(); save(); drawCert(); i.blur();
+  const ok=document.getElementById('nameOk'); ok.textContent=S.name?'Kaydedildi, Ajan '+S.name+'!':''; setTimeout(()=>ok.textContent='',2500); }
 function drawCert(){
   document.getElementById('nameIn').value=S.name||'';
   const t=totalStars(), max=STORY.chapters.length+18;
@@ -604,7 +611,7 @@ function drawCert(){
      <text y="30" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="17" fill="#1d2b53">YILDIZ</text></g>
    <text x="400" y="372" text-anchor="middle" font-family="Baloo 2" font-weight="800" font-size="48" fill="#ffffff">${nm}</text>
    <text x="400" y="420" text-anchor="middle" font-family="Baloo 2" font-weight="800" font-size="34" fill="#ffc94a">${rank}</text>
-   <text x="400" y="462" text-anchor="middle" font-family="Nunito" font-weight="700" font-size="20" fill="#cfd6ff">Görev yıldızları: ${q}/${STORY.chapters.length} · Oyun yıldızları: ${g}/15 · Toplam: ${t}/${max}</text>
+   <text x="400" y="462" text-anchor="middle" font-family="Nunito" font-weight="700" font-size="20" fill="#cfd6ff">Görev yıldızları: ${q}/${STORY.chapters.length} · Oyun yıldızları: ${g}/18 · Toplam: ${t}/${max}</text>
    <text x="400" y="505" text-anchor="middle" font-family="Nunito" font-weight="700" font-size="18" fill="#8f9bd0">Komutan Baba onayıyla · ${d} · Parola: Patatesler hazır mı? — Ketçap görevde!</text>
   </svg>`;
 }
