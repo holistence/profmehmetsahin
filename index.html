@@ -22,7 +22,7 @@
 <style>
 /* Layout: sabit sol kolon (kimlik + menü) + sağda okunur içerik kolonu; mobilde üst blok. Ana sayfada Boğaz akıntısını çağrıştıran hareketli çizgi alanı. */
 :root{
-  --bg:#f4f6f4; --surface:#ffffff; --ink:#14232b; --muted:#5b6b70; --line:#d9e0dd;
+  --bg:#ffffff; --surface:#ffffff; --ink:#14232b; --muted:#5b6b70; --line:#d9e0dd;
   --strait:#0e4a57; --strait-soft:#e2eeef; --mustard:#b98216; --mustard-soft:#f6ecd6;
   --flow-a:rgba(14,74,87,.35); --flow-b:rgba(185,130,22,.55);
   --f-display:"Newsreader","Iowan Old Style",Georgia,serif;
@@ -215,6 +215,7 @@ nav.menu a[aria-current="page"]{background:var(--mustard);color:#0b3944}
 .sb-u{font-family:var(--f-mono);font-size:.78rem;color:var(--mustard);text-decoration:none}
 .sb-u:hover{text-decoration:underline}
 @media (max-width:900px){.side{border-bottom:0}.sb-row{max-width:320px}}
+.hero{background:linear-gradient(135deg,color-mix(in srgb,var(--strait) 20%,var(--surface)) 0%,color-mix(in srgb,var(--strait) 8%,var(--surface)) 50%,color-mix(in srgb,var(--mustard) 24%,var(--surface)) 100%);border-color:transparent;box-shadow:0 18px 40px -28px rgba(14,74,87,.45)}
 .talk-dl{display:inline-block;padding:10px 20px;border:2px solid var(--strait);border-radius:999px;font-weight:600;text-decoration:none}
 @media (max-width:900px){.lang{top:auto;bottom:16px;right:16px}}
 @media (prefers-reduced-motion:no-preference){.view{animation:in .4s ease-out}@keyframes in{from{transform:translateY(8px)}to{transform:none}}}
